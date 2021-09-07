@@ -9,6 +9,17 @@ $gris: #c5c8d0;*/
 /*variables para condicionales*/
 /*variables tamaños logos*/
 /*variables sobre fuentes*/
+/*Código especifico para corregir margenes de Bootstrap*/
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px; }
+
 /*Mapas: font-size y colores*/
 h3 {
   color: #ff9900;
@@ -428,7 +439,6 @@ nav {
     letter-spacing: 1rem;
     padding-top: 2%; }
   .hola {
-    width: 500px;
     padding-top: 30px;
     padding-bottom: 10px; }
     .hola__encabezado {
@@ -441,29 +451,23 @@ nav {
       text-align: justify;
       font-size: 120%; }
   .logoContacto {
-    width: 70%;
-    padding-top: 30px; }
+    width: 40%;
+    padding: left 30px; }
+  .containerContacto {
+    margin: 10px 40px; }
   .campoForm {
     font-size: 130%;
     color: #ff9900;
     font-weight: 500; }
-  .contenedorForm {
-    display: flex;
-    flex-direction: row; }
-  /*h4{color: $naranja; font-family: $subtitulos; letter-spacing: 4px; font-size: 30px; text-align: center; padding-left: 90px; padding-top: 20px;}*/
-  div.formulario {
+  .formulario {
     display: flex;
     justify-content: center;
-    margin-left: 50px;
-    padding: 40px 20px 40px 50px;
+    padding-top: 15px;
+    padding-bottom: 25px;
     background-color: #c5c8d0;
-    width: 700px;
-    margin: 50px;
+    width: 450px;
     border-radius: 15px;
     box-shadow: 7px 13px 37px #1d6262; }
-  form {
-    width: 550px;
-    padding-right: 80px; }
   .colorBoton {
     background-image: linear-gradient(to right, #ff9900, #247878); } }
 

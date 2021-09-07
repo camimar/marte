@@ -1,4 +1,17 @@
 @import "variables";
+/*Código especifico para corregir margenes de Bootstrap*/
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
 /*Mapas: font-size y colores*/
 $headings: (
     h1: 9vw,
@@ -30,7 +43,7 @@ h3{color: $naranja; font-weight: 600;}
 header{margin-top: 1vw;}
 p.textoComun {font-family: $texto-comun; color: $azulnegro!important;}
 body{margin: 0; padding: 0; background-color: $gris;}
-/*header{display: flex; justify-content: center; margin:  10px;}*/
+header{display: flex; justify-content: center; margin:  10px;
 .pie {
     margin-top: 15px; margin-bottom: 10px;  display: flex; flex-direction: row; justify-content: space-around;
     &__logo{
@@ -208,7 +221,7 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
 .headerContacto {background-image: url(../assets/img/header.png); width: 100%}
 .tituloContacto {color: $amarillo; font-family: $titulos!important; font-size: 80px; letter-spacing: 1rem; padding-top: 2%;}
 .hola {
-    width: 500px; padding-top: 30px; padding-bottom: 10px; 
+   padding-top: 30px; padding-bottom: 10px; 
     &__encabezado {
                     letter-spacing: 2px;
                     font-family: $texto-comun;
@@ -221,12 +234,10 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
                 font-size: 120%;
     }
 }
-.logoContacto{width: 70%; padding-top: 30px;}
+.logoContacto{width: 40%; padding: left 30px;}
+.containerContacto{margin: 10px 40px;}
 .campoForm{font-size: 130%; color: $naranja; font-weight: 500;}
-.contenedorForm{display: flex; flex-direction: row;}
-/*h4{color: $naranja; font-family: $subtitulos; letter-spacing: 4px; font-size: 30px; text-align: center; padding-left: 90px; padding-top: 20px;}*/
-div.formulario{display: flex; justify-content: center; margin-left: 50px; padding: 40px 20px 40px 50px; background-color: $gris; width: 700px; margin: 50px; border-radius: 15px; box-shadow: 7px 13px 37px $azulmedio;}
-form{width: 550px; padding-right: 80px;}
+.formulario{display: flex; justify-content: center; padding-top: 15px; padding-bottom: 25px;  background-color: $gris; width: 450px; border-radius: 15px; box-shadow: 7px 13px 37px $azulmedio;}
 .colorBoton {background-image: linear-gradient(to right, $naranja, $azulclaro)};
 }/*-----------Cierre Vista Desktop-----------------------------------------------------------*/
 
