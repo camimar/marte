@@ -174,7 +174,8 @@ nav {
     margin-right: 0;
     margin-left: 15px; }
   .sectorServicios {
-    width: 300px; }
+    width: 300px;
+    background-color: #c5c8d0; }
   /*.tituloDisenio{color: $amarillo; font-family: $titulos!important; justify-content: left; font-size: 55px; letter-spacing: 3px; margin: 5px;}*/
   .contenedorGeneral {
     display: flex;
@@ -402,6 +403,10 @@ nav {
     font-weight: 30px; }
   .figura:hover {
     background-color: rgba(45, 44, 46, 0.4); }
+  .servicios {
+    justify-content: center; }
+  .sectorServicios {
+    background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
   /*Sobre mí*/
   img.logoSobre {
     width: 90%;
@@ -471,11 +476,6 @@ nav {
   background-image: linear-gradient(to bottom, #247878, #c5c8d0); }
 
 /*Diseño*/
-.sectorServicios {
-  margin: 0 !important;
-  padding: 0 !important;
-  background-image: linear-gradient(to bottom, #ffd89b, #19547b); }
-
 .servicios {
   background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
   .servicios__titulo {

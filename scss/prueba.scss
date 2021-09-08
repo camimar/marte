@@ -103,7 +103,7 @@ div.divCharco {margin-left: 15px; width: 88%;}
 .imgcharco {margin-left: 25px; width: 85%;}
     /*Diseño Mobile*/
 .navDi{width: 290px; margin-right: 0; margin-left: 15px;}
-.sectorServicios{width: 300px;}
+.sectorServicios{width: 300px; background-color: $gris;}
 /*.tituloDisenio{color: $amarillo; font-family: $titulos!important; justify-content: left; font-size: 55px; letter-spacing: 3px; margin: 5px;}*/
 .contenedorGeneral{display: flex; flex-direction: column;}
 .contenedorServicio{justify-content: center; width: 300px; margin-left: 10px; margin-top: 10px; border: solid 2px $azulclaro; background-image: linear-gradient(to top, $azulmedio, $gris);}
@@ -196,7 +196,9 @@ img.logoInicio{width: $widthLogo; padding-right: 10px;}
 .contenedorServicio figure .capa h3{visibility: hidden; color: $amarillo; font-size: 40px; font-weight: 400; transition: all 500ms ease-out;}
 .contenedorServicio figure .capa p{visibility: hidden; color:$naranja; font-size: 25px;}
 .contenedorServicio figure .capa p:hover{visibility: visible; color: $amarillo; font-weight: 30px;} 
-.figura:hover{background-color: rgba(45, 44, 46, 0.4);}        
+.figura:hover{background-color: rgba(45, 44, 46, 0.4);}     
+.servicios{justify-content: center;}
+.sectorServicios {background-image: linear-gradient(to bottom, $gris, $azulclaro);}
     /*Sobre mí*/
 img.logoSobre {width: 90%; transform: translate(60px, 60px);}
 div.sectorInfo {margin-left: 5%; margin-top: 5px;}
@@ -239,7 +241,6 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
 /*Portfolio*/
 .contenedorAlbum{background-image: linear-gradient(to bottom, $azulclaro, $gris);}
 /*Diseño*/
-.sectorServicios {margin: 0!important; padding: 0!important; background-image: linear-gradient(to bottom,#ffd89b, #19547b);}
 .servicios {
     background-image: linear-gradient(to bottom, $gris, $azulclaro);
         &__titulo {transform: translateY(-10px);}
