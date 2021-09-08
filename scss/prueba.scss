@@ -38,12 +38,12 @@ $azulnegro: map-get($map: $colores, $key: azulnegro);
 $azulclaro: map-get($map: $colores, $key: azulclaro);
 $azulmedio: map-get($map: $colores, $key: azulmedio);
 $gris: map-get($map: $colores, $key: gris);
-
+/*Generales - independientes de las vistas*/
 h3{color: $naranja; font-weight: 600;}
 header{margin-top: 1vw;}
 p.textoComun {font-family: $texto-comun; color: $azulnegro!important;}
 body{margin: 0; padding: 0; background-color: $gris;}
-header{display: flex; justify-content: center; margin:  10px;
+header{display: flex; justify-content: center; margin:  10px;}
 .pie {
     margin-top: 15px; margin-bottom: 10px;  display: flex; flex-direction: row; justify-content: space-around;
     &__logo{
@@ -65,13 +65,8 @@ nav {
 @media only screen and (max-width: 767px){ 
     /*General*/
 * {margin: 0; padding: 0;}
-h1.tituloPags{color: $amarillo; font-family: $titulos!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
+.tituloPags{color: $amarillo; font-family: $titulos!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
 h1{color: $amarillo; font-family: $titulos!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
-h1.tituloInicio { @keyframes aparecerAgrandar 
-    {0% {opacity: 0;}
-    100%{opacity: 1;}
-        }
-                 }
 h2{color: $naranja; font-family: $subtitulos;font-size: 50px;}
 img.logoInicio{width: 20%; height: 20%; padding-top: 5px;}
 nav{width: 290px; margin-right: 0; margin-left: 15px;}
@@ -109,7 +104,7 @@ div.divCharco {margin-left: 15px; width: 88%;}
     /*Diseño Mobile*/
 .navDi{width: 290px; margin-right: 0; margin-left: 15px;}
 .sectorServicios{width: 300px;}
-.tituloDisenio{color: $amarillo; font-family: $titulos!important; justify-content: left; font-size: 55px; letter-spacing: 3px; margin: 5px;}
+/*.tituloDisenio{color: $amarillo; font-family: $titulos!important; justify-content: left; font-size: 55px; letter-spacing: 3px; margin: 5px;}*/
 .contenedorGeneral{display: flex; flex-direction: column;}
 .contenedorServicio{justify-content: center; width: 300px; margin-left: 10px; margin-top: 10px; border: solid 2px $azulclaro; background-image: linear-gradient(to top, $azulmedio, $gris);}
 .capa p{text-align: center; font-size: 18px; font-weight: 400;}
@@ -151,9 +146,9 @@ form{width: 215px;}
  /*Vista Desktop------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1024px){
     /*General*/
-h1.tituloPags{color: $amarillo; font-family: $titulos!important; font-size: $h1; letter-spacing: 1rem; padding-top: 2%;}
+h1.tituloPags{color: $amarillo; font-family: $titulos!important; font-size: 80px;; letter-spacing: 1rem; padding-top: 2%;}
 h2{color: $naranja; font-family: $subtitulos;font-size: $h2;}
-img.logoInicio{width: $widthLogo; padding: 2px;}
+img.logoInicio{width: $widthLogo; padding-right: 10px;}
     /*Index Desktop*/
 .imagen-derecha{animation-name: imagen-derecha; animation-iteration-count: infinite; animation-duration: 4s;}
 .imagen-izquierda{animation-name: imagen-izquierda; animation-iteration-count: infinite; animation-duration: 4s;}
