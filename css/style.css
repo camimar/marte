@@ -392,6 +392,28 @@ footer {
     border: 2px solid #1d6262;
     font-weight: 400; }
   /*Diseño Desktop*/
+  .divServicio {
+    margin-left: 50px;
+    justify-content: center; }
+  /*arreglar centrar*/
+  .tituloDi {
+    margin-top: 30px;
+    color: #ffd11a;
+    font-family: "Barlow Condensed", fantasy;
+    font-size: 40px;
+    font-weight: 800; }
+  .introDi {
+    padding: 20px 0;
+    color: #1d6262;
+    font-family: 'Questrial Regular', sans-serif;
+    font-size: 30px; }
+  .btn-contactarme {
+    font-size: 20px;
+    color: blue;
+    background-color: yellow; }
+  .bordeBajo {
+    justify-content: center;
+    border-bottom: solid #ff9900 2px; }
   .contenedorGeneral {
     display: flex;
     flex-flow: row wrap;
@@ -505,16 +527,19 @@ footer {
     margin-left: 60px; }
   .hola {
     padding-top: 30px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    width: 480px;
+    margin-left: 40px; }
     .hola__encabezado {
       letter-spacing: 2px;
       font-family: "Questrial Regular", sans-serif;
       font-weight: 300;
-      font-size: 40px;
+      font-size: 35px;
       text-align: left; }
     .hola__texto {
+      width: 430px;
       text-align: justify;
-      font-size: 120%; }
+      font-size: 20px; }
   .logoContacto {
     width: 40%;
     padding: left 30px; }
