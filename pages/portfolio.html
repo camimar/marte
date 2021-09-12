@@ -35,11 +35,13 @@
     <!--Mi CSS-->
     <link rel="stylesheet" href="../css/style.css">
     <!--CSS ANIMATE-->
-	<link rel="stylesheet" href="../css/animate.css">
+	  <link rel="stylesheet" href="../css/animate.css">
   </head>
+  
 <!--Apertura Body-->
 <body>
-  <!--ROW Header y Titulo-->
+
+  <!--ROW Header y Titulo
   <div class="container-fluid">
     <header>
       <div class="row">
@@ -48,8 +50,8 @@
         </div>
       </div>
     </header>
-  </div>
-  <!---NavBar Bootstrap centrada-->
+  </div>-->
+  <!---NavBar Bootstrap centrada
   <div class="container-fluid">
     <div class="row">
       <nav class="col-lg-12 col-xs-12 col-md-12 navbar navbar-expand-lg navbar-light bg-light rounded navPags">
@@ -81,14 +83,46 @@
           </ul>
         </div>
       </nav>
-    </div> <!--Cierre row-->
-  </div> <!--Cierre container fluid NavBar-->
+    </div> 
+  </div>  -->
+
+  <!--Intento NavBar fixed-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-10">
+        <header class="headerNav">
+            <div class="contenedorNav logo-nav-container">
+              <img src="../assets/img/logosobremi.png" class="logoNav wow bounceIn" alt="logo">
+              <span class="menuIcon">Ver menú</span>
+                <nav class="navigation">
+                <ul>
+                  <li><a href="../index.html">INICIO</a></li>
+                  <li><a href="#">PORTFOLIO</a></li>
+                  <li><a href="disenio.html">DISEÑO</a></li>
+                  <li><a href="sobremi.html">SOBRE MÍ</a></li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+                </nav>
+            </div>
+          </header>
+      </div>
+    </div>
+  </div>
+
 <main role="main">
+  <!--Banner-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-10">
+        <img class="banner" src="../assets/img/banner1.png" alt="banner">
+      </div>
+    </div>
+  </div>
   <!--Contenedor del subMenu de Portfolio-->
   <div class="container-fluid">
     <section class="jumbotron text-center submenu">
       <div class="container">
-        <img class="logoInicio wow bounceIn" src="../assets/img/logosinfondo.png" alt="Logo marte" width="70%">
+        <img class="logoPort wow fadeInUpBig" src="../assets/img/logosinfondo.png" alt="Logo marte" width="70%">
         <h2 class="submenu__titulo">CHARCO STUDIO</h2>
         <p class="lead text-muted submenu__texto submenu__texto--estilo">Charco es el nombre del Branding Studio que creamos con una compañera diseñadora. Aquí podrás ver algunos trabajos de referencia.</p>
         <p>
@@ -171,12 +205,15 @@
     </div>
   </div>
 </div>
-<!--Scripts-->
+    <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-<!--WOW JS-->
-<script src="../js/wow.min.js"></script>
-<script> new WOW().init(); </script>
+    <!--Jquery para NavBar-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!--WOW JS-->
+    <script src="../js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
 
   </body>
 </html>

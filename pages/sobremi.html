@@ -41,7 +41,7 @@
 	  <link rel="stylesheet" href="../css/animate.css">
   </head>
   <body>
-    
+    <!--Titulo
 <header>
   <div class="row">
     <div class="col-lg-12 col-xs-10">
@@ -73,10 +73,41 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav>-->
 
+   <!--Intento NavBar fixed-->
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-10">
+        <header class="headerNav">
+            <div class="contenedorNav logo-nav-container">
+              <img src="../assets/img/logosobremi.png" class="logoNav wow bounceIn" alt="logo">
+              <span class="menuIcon">Ver menú</span>
+                <nav class="navigation">
+                  <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="disenio.html">DISEÑO</a></li>
+                    <li><a href="#">SOBRE MÍ</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                  </ul>
+                </nav>
+            </div>
+          </header>
+      </div>
+    </div>
+  </div>
+  
 <main role="main">
-
+  <!--Banner-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-10">
+        <img class="banner" src="../assets/img/banner1.png" alt="banner">
+      </div>
+    </div>
+  </div>
+  <!--Carousel fotos Martina-->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -143,14 +174,15 @@
       <a href="#"> <img class="pie__logo logo--tamanio" src="../assets/icons/logomail.png" alt="logo mail"></a>
     </footer>
 </main>
-
-
+    <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-<!--WOW JS-->
-<script src="../js/wow.min.js"></script>
-<script> new WOW().init(); </script>
+    <!--Jquery para NavBar-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!--WOW JS-->
+    <script src="../js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
 
   </body>
 </html>

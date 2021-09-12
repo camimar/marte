@@ -1,17 +1,8 @@
 @import "variables";
 /*Código especifico para corregir margenes de Bootstrap*/
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    
-}
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-    
-}
+.container-fluid {padding-right: 15px; padding-left: 15px;  margin-right: auto; margin-left: auto;}
+.row {margin-right: -15px; margin-left: -15px;}
+
 /*Mapas: font-size y colores*/
 $headings: (
     h1: 9vw,
@@ -43,9 +34,22 @@ h3{color: $naranja; font-weight: 600;}
 header{margin-top: 1vw;}
 p.textoComun {font-family: $texto-comun; color: $azulnegro!important;}
 body{margin: 0; padding: 0; background-color: $gris;}
-header{display: flex; justify-content: center; margin:  10px;}
+
+/*Prueba de NavBar Fixed ----- Ver si puedo anidar con BEM--------------------------------------------------*/
+.headerNav{background-color: $amarillo; height: 5rem; color: $azulnegro; text-decoration: none; font-size: 1.3rem; padding: 2 rem 0; position: fixed; left: 0; top: 0; right: 0;}
+.logo-nav-container{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.logoNav{width: 5%; height: 5%; margin-left: 10px; margin-top: 10px;}
+.menuIcon{display: none;} /*en media querie mobile se activa con Js*/
+.navigation ul {list-style: none; margin: 0; padding: 0;}
+.navigation ul li {display: inline-block; margin: 5px 10px}
+.navigation ul li a {color:#333; display: block; padding: 1rem 1rem; transition: all 0.4s}
+.navigation ul li a::after {content: ""; display: block; margin: auto; height: 3px; width: 0; top: 5px; background: transparent; transition: all 0.9s;}
+li > a:hover::after, li > a.active-nav::after {width: 100%; background: $azulnegro;}
+main{padding-top: 6rem;}
+.banner{width: 100%;} /*aca me sigue quedando margen a los costados*/
+footer{margin-top: 40px;}
 .pie {
-    margin-top: 15px; margin-bottom: 10px;  display: flex; flex-direction: row; justify-content: space-around;
+    margin-top: 30px; margin-bottom: 10px;  display: flex; flex-direction: row; justify-content: space-around;
     &__logo{
         width: 45%;
         transition: all 0.5s;
@@ -54,22 +58,24 @@ header{display: flex; justify-content: center; margin:  10px;}
         transform: rotate(60deg);
     }
 }
-nav {
-	padding: 0; margin: 2%;
-    li {
-         a {font-size: 200%; color: $naranja!important; font-family:'Barlow Condensed', fantasy; font-weight: 1000; padding: 2%; background-color: $gris;}
-         a:hover{color:#ff7565; transition: 0.4s;} /*No funca*/
-    }
-} 
+
 /*Vista Mobile--------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px){ 
     /*General*/
 * {margin: 0; padding: 0;}
-.tituloPags{color: $amarillo; font-family: $titulos!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
+.tituloIndex{color: $amarillo; font-family: $titulos!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
 h1{color: $amarillo; font-family: $titulos!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
 h2{color: $naranja; font-family: $subtitulos;font-size: 50px;}
 img.logoInicio{width: 20%; height: 20%; padding-top: 5px;}
-nav{width: 290px; margin-right: 0; margin-left: 15px;}
+
+    /*navBar fixed*/   
+.navigation {width: 100%; margin-top: 1rem;}
+.menuIcon{display: block; cursor: pointer;}
+.navigation ul {display: none;}
+.navigation ul.show {display: block;}
+.navigation ul li {display: block;}
+.navigation ul li a {color:#333; display: block; padding: 0.5rem 1rem; transition: all 0.4s}
+
 footer {width: 340px;}
 .afooter {width: 70px;}
 .pie {
@@ -96,13 +102,13 @@ div.carousel {margin: 5px 15px; width: 90%;}
 img.logoPort{width: 20%; height: 20%; padding-top: 5px;}
 .submenu {
     background-image: linear-gradient(to bottom, $gris, $azulclaro);
-    &__titulo {color: $naranja; font-family: $subtitulos; font-size: 40px;}
+    &__titulo {color: $naranja; font-family:'Cantarell Regular'; font-weight: 400; font-size: 40px;}
     &__texto {font-family: $texto-comun; color:$azulmedio!important; font-weight: 600;}
 }
 div.divCharco {margin-left: 15px; width: 88%;}
 .imgcharco {margin-left: 25px; width: 85%;}
     /*Diseño Mobile*/
-.navDi{width: 290px; margin-right: 0; margin-left: 15px;}
+/*.navDi{width: 290px; margin-right: 0; margin-left: 15px;}*/
 .sectorServicios{width: 300px; background-color: $gris;}
 /*.tituloDisenio{color: $amarillo; font-family: $titulos!important; justify-content: left; font-size: 55px; letter-spacing: 3px; margin: 5px;}*/
 .contenedorGeneral{display: flex; flex-direction: column;}
@@ -146,19 +152,19 @@ form{width: 215px;}
  /*Vista Desktop------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1024px){
     /*General*/
-h1.tituloPags{color: $amarillo; font-family: $titulos!important; font-size: 80px;; letter-spacing: 1rem; padding-top: 2%;}
+.textoIndex{display: flex; justify-content: left; padding: 30px 0;}
+.tituloIndex{margin-left: 35px; color: $azulmedio; font-family: $tituloImpact; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: left;}
+.introIndex{margin-left: 30px; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 38px; text-align: left; padding-top: 10px;}
 h2{color: $naranja; font-family: $subtitulos;font-size: $h2;}
-img.logoInicio{width: $widthLogo; padding-right: 10px;}
+.logoIndex{width: 60%; padding-top: 5px; margin-left: 20px;}
     /*Index Desktop*/
 .imagen-derecha{animation-name: imagen-derecha; animation-iteration-count: infinite; animation-duration: 4s;}
 .imagen-izquierda{animation-name: imagen-izquierda; animation-iteration-count: infinite; animation-duration: 4s;}
-.bienvenida {
-    margin-top: 4%;
-    &__titulo {color: $azulclaro; font-weight: 1000; font-size: 300%; letter-spacing: 2px; font-family: $subtitulos;}
-    &__texto2 {color: $azulclaro; font-size: 210%; font-family: $subtitulos; padding-top: 10px;}
+.bienvenida {margin-top: 4%; color: $azulclaro; font-weight: 1000; font-size: 70px; letter-spacing: 2px; font-family: $subtitulos;}
+   /* &__texto2 {color: $azulclaro; font-size: 210%; font-family: $subtitulos; padding-top: 10px;}
     &__texto3 {color: $azulclaro; font-size: 210%; font-family: $subtitulos; text-align: right;}
-    &__imagen {width: 90%;}
-}
+    &__imagen {width: 90%;}*/
+
     /*Portfolio Desktop*/
 .logoPort{width: $widthLogoGrande; padding: 2px; padding-bottom: 10px;}
 .submenu {
@@ -217,6 +223,7 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
     /*Contacto Desktop*/
 .headerContacto {background-image: url(../assets/img/header.png); width: 100%}
 .tituloContacto {color: $amarillo; font-family: $titulos!important; font-size: 80px; letter-spacing: 1rem; padding-top: 2%;}
+.compuHola{width: 170%; margin-left: 40px;}
 .hola {
    padding-top: 30px; padding-bottom: 10px; 
     &__encabezado {
