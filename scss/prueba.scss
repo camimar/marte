@@ -31,9 +31,8 @@ $azulmedio: map-get($map: $colores, $key: azulmedio);
 $gris: map-get($map: $colores, $key: gris);
 /*Generales - independientes de las vistas*/
 h3{color: $naranja; font-weight: 600;}
-header{margin-top: 1vw;}
 p.textoComun {font-family: $texto-comun; color: $azulnegro!important;}
-body{margin: 0; padding: 0; background-color: $gris;}
+body{margin: 0; padding: 0;}
 
 /*Prueba de NavBar Fixed ----- Ver si puedo anidar con BEM--------------------------------------------------*/
 .headerNav{background-color: $amarillo; height: 5rem; color: $azulnegro; text-decoration: none; font-size: 1.3rem; padding: 2 rem 0; position: fixed; left: 0; top: 0; right: 0;}
@@ -146,17 +145,18 @@ div.sectorInfo {margin-left: 5%;}
 h4{color: $amarillo; font-family: $subtitulos; font-size: $h4; text-align: center; padding-left: 10px; padding-top: 5px;}
 div.formulario{display: flex; justify-content: center; padding-left: 15px; background-color: $gris; width: 90%; margin: 7px; margin-left: 20px; border-radius: 5px; box-shadow: 2px 5px 12px $azulnegro;}
 form{width: 215px;}
-.colorBoton {background-image: linear-gradient(to right, $naranja, $azulclaro)};
+.colorBoton {background-image: linear-gradient(to right, $naranja, $amarillo)};
 }/*Cierre Vista Mobile*/
 
  /*Vista Desktop------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1024px){
     /*General*/
-.textoIndex{display: flex; justify-content: left; padding: 30px 0;}
-.tituloIndex{margin-left: 35px; color: $azulmedio; font-family: $tituloImpact; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: left;}
-.introIndex{margin-left: 30px; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 38px; text-align: left; padding-top: 10px;}
+.textoIndex{display: flex; justify-content: left; padding-top: 40px;}
+.tituloIndex{margin-left: 35px; color: $amarillo; font-family: $tituloImpact; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: left;}
+.introIndex1{margin-left: 30px; padding: 20px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 30px; text-align: left; border-bottom: solid blue 2px}
+.introIndex2{margin-left: 30px; padding-bottom: 10px; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 30px; text-align: left;}
 h2{color: $naranja; font-family: $subtitulos;font-size: $h2;}
-.logoIndex{width: 60%; padding-top: 5px; margin-left: 20px;}
+.logoIndex{width: 70%; padding-top: 10px; padding-left: 30px;}
     /*Index Desktop*/
 .imagen-derecha{animation-name: imagen-derecha; animation-iteration-count: infinite; animation-duration: 4s;}
 .imagen-izquierda{animation-name: imagen-izquierda; animation-iteration-count: infinite; animation-duration: 4s;}
@@ -221,9 +221,8 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
         }
     }
     /*Contacto Desktop*/
-.headerContacto {background-image: url(../assets/img/header.png); width: 100%}
 .tituloContacto {color: $amarillo; font-family: $titulos!important; font-size: 80px; letter-spacing: 1rem; padding-top: 2%;}
-.compuHola{width: 170%; margin-left: 40px;}
+.compuHola{width: 200%; margin-left: 60px;}
 .hola {
    padding-top: 30px; padding-bottom: 10px; 
     &__encabezado {
@@ -239,10 +238,10 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
     }
 }
 .logoContacto{width: 40%; padding: left 30px;}
-.containerContacto{margin: 10px 40px;}
+.containerContacto{margin: 40px;}
 .campoForm{font-size: 130%; color: $naranja; font-weight: 500;}
 .formulario{display: flex; justify-content: center; padding-top: 15px; padding-bottom: 25px;  background-color: $gris; width: 450px; border-radius: 15px; box-shadow: 7px 13px 37px $azulmedio;}
-.colorBoton {background-image: linear-gradient(to right, $naranja, $azulclaro)};
+.colorBoton {background-image: linear-gradient(to right, $azulnegro, $azulmedio)};
 }/*-----------Cierre Vista Desktop-----------------------------------------------------------*/
 
 /*Portfolio*/

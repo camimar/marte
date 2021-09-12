@@ -26,17 +26,13 @@ h3 {
   color: #ff9900;
   font-weight: 600; }
 
-header {
-  margin-top: 1vw; }
-
 p.textoComun {
   font-family: "Questrial Regular", sans-serif;
   color: #000d1a !important; }
 
 body {
   margin: 0;
-  padding: 0;
-  background-color: #c5c8d0; }
+  padding: 0; }
 
 /*Prueba de NavBar Fixed ----- Ver si puedo anidar con BEM--------------------------------------------------*/
 .headerNav {
@@ -309,7 +305,7 @@ footer {
   form {
     width: 215px; }
   .colorBoton {
-    background-image: linear-gradient(to right, #ff9900, #247878); } }
+    background-image: linear-gradient(to right, #ff9900, #ffd11a); } }
 
 /*Cierre Vista Mobile*/
 /*Vista Desktop------------------------------------------------------------------------------*/
@@ -318,30 +314,38 @@ footer {
   .textoIndex {
     display: flex;
     justify-content: left;
-    padding: 30px 0; }
+    padding-top: 40px; }
   .tituloIndex {
     margin-left: 35px;
-    color: #1d6262;
+    color: #ffd11a;
     font-family: "Barlow Condensed", fantasy;
     font-size: 50px;
     letter-spacing: 8px;
     text-decoration: underline;
     text-align: left; }
-  .introIndex {
+  .introIndex1 {
     margin-left: 30px;
+    padding: 20px 0;
     color: #1d6262;
     font-family: 'Questrial Regular', sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     text-align: left;
-    padding-top: 10px; }
+    border-bottom: solid blue 2px; }
+  .introIndex2 {
+    margin-left: 30px;
+    padding-bottom: 10px;
+    color: #1d6262;
+    font-family: 'Questrial Regular', sans-serif;
+    font-size: 30px;
+    text-align: left; }
   h2 {
     color: #ff9900;
     font-family: "Questrial Regular", sans-serif;
     font-size: 5vw; }
   .logoIndex {
-    width: 60%;
-    padding-top: 5px;
-    margin-left: 20px; }
+    width: 70%;
+    padding-top: 10px;
+    padding-left: 30px; }
   /*Index Desktop*/
   .imagen-derecha {
     animation-name: imagen-derecha;
@@ -490,9 +494,6 @@ footer {
       font-family: "Questrial Regular", sans-serif;
       font-weight: 400; }
   /*Contacto Desktop*/
-  .headerContacto {
-    background-image: url(../assets/img/header.png);
-    width: 100%; }
   .tituloContacto {
     color: #ffd11a;
     font-family: "Questrial Regular", sans-serif !important;
@@ -500,8 +501,8 @@ footer {
     letter-spacing: 1rem;
     padding-top: 2%; }
   .compuHola {
-    width: 170%;
-    margin-left: 40px; }
+    width: 200%;
+    margin-left: 60px; }
   .hola {
     padding-top: 30px;
     padding-bottom: 10px; }
@@ -518,7 +519,7 @@ footer {
     width: 40%;
     padding: left 30px; }
   .containerContacto {
-    margin: 10px 40px; }
+    margin: 40px; }
   .campoForm {
     font-size: 130%;
     color: #ff9900;
@@ -533,7 +534,7 @@ footer {
     border-radius: 15px;
     box-shadow: 7px 13px 37px #1d6262; }
   .colorBoton {
-    background-image: linear-gradient(to right, #ff9900, #247878); } }
+    background-image: linear-gradient(to right, #000d1a, #1d6262); } }
 
 /*-----------Cierre Vista Desktop-----------------------------------------------------------*/
 /*Portfolio*/
