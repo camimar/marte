@@ -11,7 +11,7 @@
     <title>Contacto</title>
  
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -38,72 +38,24 @@
 
 <!--Apertura Body-->
 <body class="bg-light">  
-  <!--Row Header
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-10">
-        <header>
-          <h1 class="tituloContacto wow slideInDown">CONTACTO</h1>
-        </header>
+  <!--NavBar fixed-->
+  <header class="headerNav">
+      <div class="contenedorNav logo-nav-container">
+        <img src="../assets/img/logosobremi.png" class="logoNav wow bounceIn" alt="logo">
+        <span class="menuIcon"><img class="menuHam" src="../assets/icons/menuHam.png" alt="logomenu" width="10%"></span>
+        <nav class="navigation">
+            <ul>
+              <li><a href="../index.html">INICIO</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="disenio.html">DISEÑO</a></li>
+              <li><a href="sobremi.html">SOBRE MÍ</a></li>
+              <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
       </div>
-    </div>
-  </div>-->
-  <!---NavBar Bootstrap Centrada
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-10">
-      <nav class="col-lg-10 navbar navbar-expand-lg navbar-light bg-light rounded">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-          <ul class="navbar-nav navContacto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">INICIO</a>
-            </li>
-            <li class="nav-item"> 
-              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="disenio.html">DISEÑO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobremi.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      </div>
-    </div>
-  </div>-->
-
-  <!--Intento NavBar fixed-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-10">
-        <header class="headerNav">
-            <div class="contenedorNav logo-nav-container">
-              <img src="../assets/img/logosobremi.png" class="logoNav wow bounceIn" alt="logo">
-              <span class="menuIcon">Ver menú</span>
-                <nav class="navigation">
-                <ul>
-                  <li><a href="../index.html">INICIO</a></li>
-                  <li><a href="portfolio.html">PORTFOLIO</a></li>
-                  <li><a href="disenio.html">DISEÑO</a></li>
-                  <li><a href="sobremi.html">SOBRE MÍ</a></li>
-                  <li><a href="#">CONTACTO</a></li>
-                </ul>
-                </nav>
-            </div>
-          </header>
-      </div>
-    </div>
-  </div>
+  </header>
  
-  <main>
+  <main class="mainColor">
     <!--Banner-->
     <div class="container-fluid">
       <div class="row">
@@ -173,20 +125,22 @@
       </div>
       </div>
     </div>
- </main>
-  <!--Footer-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-xs-12 col-md-12">
-      <footer class="pie">
-        <a href="https://www.instagram.com/marte_______/"><img class="pie__logo logo--tamanio" src="../assets/icons/logoig.png" alt="logo Instagram"></a>
-        <a href="https://www.facebook.com/martevisual.dg"><img class="pie__logo logo--tamanio" src="../assets/icons/logofb.png" alt="logo facebook"></a>
-        <a href="https://www.behance.net/martevisual"><img class="pie__logo logo--tamanio" src="../assets/icons/logobe.png" alt="logo Behance"></a>
-        <a href="#"> <img class="pie__logo logo--tamanio" src="../assets/icons/logomail.png" alt="logo mail"></a>
-      </footer>
+ 
+    <!--Footer-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-xs-12 col-md-12">
+        <footer class="pie">
+          <a href="https://www.instagram.com/marte_______/"><img class="pie__logo logo--tamanio" src="../assets/icons/logoig.png" alt="logo Instagram"></a>
+          <a href="https://www.facebook.com/martevisual.dg"><img class="pie__logo logo--tamanio" src="../assets/icons/logofb.png" alt="logo facebook"></a>
+          <a href="https://www.behance.net/martevisual"><img class="pie__logo logo--tamanio" src="../assets/icons/logobe.png" alt="logo Behance"></a>
+          <a href="#"> <img class="pie__logo logo--tamanio" src="../assets/icons/logomail.png" alt="logo mail"></a>
+        </footer>
+        </div>
       </div>
-    </div>
-  </div> 
+    </div> 
+
+</main>
     <!--Links Scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

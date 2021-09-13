@@ -1,6 +1,6 @@
 @import "variables";
 /*Código especifico para corregir margenes de Bootstrap*/
-.container-fluid {padding-right: 15px; padding-left: 15px;  margin-right: auto; margin-left: auto;}
+.container-fluid {padding-right: 15px; padding-left: 15px;  margin-right: auto; margin-left: auto; background-color: #f2f2bd;}
 .row {margin-right: -15px; margin-left: -15px;}
 
 /*Mapas: font-size y colores*/
@@ -22,6 +22,7 @@ $colores: (
     azulclaro: #247878,
     azulmedio: #1d6262,
     gris: #c5c8d0,
+    clarito: #f2f2bd,
 );
 $amarillo: map-get($map: $colores, $key: amarillo);
 $naranja: map-get($map: $colores, $key: naranja);
@@ -29,13 +30,15 @@ $azulnegro: map-get($map: $colores, $key: azulnegro);
 $azulclaro: map-get($map: $colores, $key: azulclaro);
 $azulmedio: map-get($map: $colores, $key: azulmedio);
 $gris: map-get($map: $colores, $key: gris);
+$clarito: map-get($map: $colores, $key: clarito);
+
 /*Generales - independientes de las vistas*/
 h3{color: $naranja; font-weight: 600;}
 p.textoComun {font-family: $texto-comun; color: $azulnegro!important;}
 body{margin: 0; padding: 0;}
 
-/*Prueba de NavBar Fixed ----- Ver si puedo anidar con BEM--------------------------------------------------*/
-.headerNav{background-color: $amarillo; height: 5rem; color: $azulnegro; text-decoration: none; font-size: 1.3rem; padding: 2 rem 0; position: fixed; left: 0; top: 0; right: 0;}
+/*Prueba de NavBar Fixed*/
+.headerNav{z-index:100; background-color: $amarillo; height: 5rem; color: $azulnegro; text-decoration: none; font-size: 1.3rem; padding: 2 rem 0; position: sticky; left: 0; top: 0; right: 0;}
 .logo-nav-container{display: flex; justify-content: space-between; flex-wrap: wrap;}
 .logoNav{width: 5%; height: 5%; margin-left: 10px; margin-top: 10px;}
 .menuIcon{display: none;} /*en media querie mobile se activa con Js*/
@@ -44,11 +47,14 @@ body{margin: 0; padding: 0;}
 .navigation ul li a {color:#333; display: block; padding: 1rem 1rem; transition: all 0.4s}
 .navigation ul li a::after {content: ""; display: block; margin: auto; height: 3px; width: 0; top: 5px; background: transparent; transition: all 0.9s;}
 li > a:hover::after, li > a.active-nav::after {width: 100%; background: $azulnegro;}
-main{padding-top: 6rem;}
+/*main{padding-top: 6rem;}*/
 .banner{width: 100%;} /*aca me sigue quedando margen a los costados*/
+.carousel-control-next-icon{filter: invert(100%);}
+.carousel-control-prev-icon{filter: invert(100%);}
+.mainColor{background-color: $clarito;}
 footer{margin-top: 40px;}
 .pie {
-    margin-top: 30px; margin-bottom: 10px;  display: flex; flex-direction: row; justify-content: space-around;
+    background-color: $clarito; padding-top: 30px; padding-bottom: 10px;  display: flex; flex-direction: row; justify-content: space-around;
     &__logo{
         width: 45%;
         transition: all 0.5s;
@@ -57,32 +63,57 @@ footer{margin-top: 40px;}
         transform: rotate(60deg);
     }
 }
+.pieIndex {
+    background-color: #f2f2bd; padding-top: 30px; padding-bottom: 10px;  display: flex; flex-direction: row; justify-content: space-around;
+    &__logo{
+        width: 45%;
+        transition: all 0.5s;
+    }
+    &__logo:hover {
+        transform: rotate(60deg);
+    }
+}
+/*Portfolio*/
+.contenedorAlbum{background-image: linear-gradient(to top, #f2f2bd, $gris);}
+/*Diseño*/
+.tarjetas {
+    border: 2px solid;
+    &__titulo {color: $naranja; font-weight: 600;}
+    &__texto {font-weight: 400; font-family: $texto-comun;}
+}
+.fondoTarjetas {background-image: linear-gradient(to bottom, $gris, $azulclaro);}
+
+/*Sobre Mi*/
+div.carouselSobreMi{border-bottom: solid 15px $amarillo;}
+.btn-carousel-sobremi{width: 10%; background-color: $amarillo;}
+.sectorInfo{border-top: solid 15px $naranja; border-bottom: solid 25px $naranja; margin-right: 20px; background-color: $amarillo;}
+/*Contacto*/
 
 /*Vista Mobile--------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px){ 
     /*General*/
 * {margin: 0; padding: 0;}
-.tituloIndex{color: $amarillo; font-family: $titulos!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
 h1{color: $amarillo; font-family: $titulos!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
 h2{color: $naranja; font-family: $subtitulos;font-size: 50px;}
-img.logoInicio{width: 20%; height: 20%; padding-top: 5px;}
+.logoNav{width: 15%; height: 15%; margin-left: 10px; margin-top: 10px;}
 
     /*navBar fixed*/   
 .navigation {width: 100%; margin-top: 1rem;}
-.menuIcon{display: block; cursor: pointer;}
+.menuIcon{display: flex; cursor: pointer; margin: 0 1rem; justify-content: flex-end;}
+.menuHam{vertical-align: middle; border-style: none; object-fit: contain;}
 .navigation ul {display: none;}
-.navigation ul.show {display: block;}
+.navigation ul.show {display: block; background-color: $amarillo;}
 .navigation ul li {display: block;}
 .navigation ul li a {color:#333; display: block; padding: 0.5rem 1rem; transition: all 0.4s}
 
-footer {width: 340px;}
+/*footer {width: 340px;}*/
 .afooter {width: 70px;}
 .pie {
-    margin-left: 5px; margin-right: 0; display: flex; flex-direction: row; justify-content: space-around; padding-top: 7px;
+    display: flex; flex-direction: row; justify-content: space-around; padding: 0 0 10px 30px;
     &__logo{
-    width: 40%;
+    width: 50%;
     transition: all 0.5s;
-    margin-left: 9px;
+    margin-left: 5px;
     }
     &__logo:hover {
     transform: rotate(60deg);
@@ -90,34 +121,48 @@ footer {width: 340px;}
 }
     /*Index Mobile*/
 div.carousel {margin: 5px 15px; width: 90%;}
-.bienvenida {
-    margin-top: 4%; margin-left: 4%;
-    &__titulo {color: $azulclaro; font-weight: 1000; font-size: 200%; letter-spacing: 2px; font-family: $subtitulos; text-align: center;}
-    &__texto2 {color: $azulclaro; font-size: 140%; font-family: $subtitulos; padding-top: 10px;}
-    &__texto3 {color: $azulclaro; font-size: 140%; font-family: $subtitulos; text-align: center;}
-    &__imagen {width: 75%; margin-left: 25px;}
+.textoIndex{flex-flow: row wrap; justify-content: center; margin-top: 30px;}
+.tituloIndex{padding-top: 15px; color: $amarillo; font-family: $tituloImpact!important; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: center;}
+.introIndex1{margin-left: 5px; padding: 15px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px; text-align: justify; border-bottom: solid blue 2px}
+.introIndex2{margin-left: 5px; padding-bottom: 2px; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px; text-align: justify;}
+.introIndex3{color: blue; font-family: 'Questrial Regular', sans-serif; font-size: 18px; padding-top: 10px; text-align: center;}
+.logoIndex{width: 50%; padding: 10px; margin-left: 65px;}
+div.botonInfo{justify-content: center; margin-left: 30px;}
+.btn-info{font-size: 20px; color: blue; background-color: yellow; padding: 5px 20px}
+.pieIndex {
+    margin-left: 35px; margin-right: 0; display: flex; flex-direction: row; justify-content: space-around; padding-top: 15px;
+    &__logo{
+    width: 50%; transition: all 0.5s; margin-left: 9px;
+    }
+    &__logo:hover {
+    transform: rotate(60deg);
+    }
 }
     /*Portfolio Mobile*/
 img.logoPort{width: 20%; height: 20%; padding-top: 5px;}
 .submenu {
-    background-image: linear-gradient(to bottom, $gris, $azulclaro);
-    &__titulo {color: $naranja; font-family:'Cantarell Regular'; font-weight: 400; font-size: 40px;}
+    background-image: linear-gradient(to top, $gris, $clarito);
+    &__titulo {color: $naranja; font-family: $tituloImpact; font-weight: 400; font-size: 40px;}
     &__texto {font-family: $texto-comun; color:$azulmedio!important; font-weight: 600;}
 }
-div.divCharco {margin-left: 15px; width: 88%;}
-.imgcharco {margin-left: 25px; width: 85%;}
+.imgcharco {width: 100%;}
+.contenedorAlbum{background-image: linear-gradient(to top, #f2f2bd, $clarito);}
+
     /*Diseño Mobile*/
-/*.navDi{width: 290px; margin-right: 0; margin-left: 15px;}*/
-.sectorServicios{width: 300px; background-color: $gris;}
-/*.tituloDisenio{color: $amarillo; font-family: $titulos!important; justify-content: left; font-size: 55px; letter-spacing: 3px; margin: 5px;}*/
-.contenedorGeneral{display: flex; flex-direction: column;}
-.contenedorServicio{justify-content: center; width: 300px; margin-left: 10px; margin-top: 10px; border: solid 2px $azulclaro; background-image: linear-gradient(to top, $azulmedio, $gris);}
-.capa p{text-align: center; font-size: 18px; font-weight: 400;}
-.capa h3{text-align: center;}
+.contenedorServicio{justify-content: center; width: 300px; margin-left: 40px; margin-top: 15px; border: solid 2px blue; background-image: linear-gradient(to top, white, $gris);}
 .disenio{width: 270px; justify-content: center; padding-left: 15px; padding-top: 7px;}
+.divServicio{margin-left: 60px; justify-content: center;} /*arreglar centrar*/
+.tituloDi{margin-top: 30px; color: $amarillo; font-family: $tituloImpact; font-size: 30px; font-weight: 800;}
+.introDi{padding: 20px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px;}
+.btn-contactarme{margin-left: 40px; font-size: 20px; color: blue; background-color: yellow;}
+h3{text-align: center;}
+p{text-align: center;}
+
     /*Sobre Mi Mobile*/
-img.logoSobre {width: 90%;transform: translate(60px, 60px);}
-div.sectorInfo {margin-left: 5%;}
+.carouselSobreMi{width: 95%;}
+img.logoSobre {width: 60%; margin-left: 70px; margin-top: 10px; margin-bottom: 10px;}
+div.sectorInfo {margin: 0; width: 100%;}
+.featurette-heading{font-size: 35px; padding-top: 10px; text-align: center;}
 .info {
     background-color: #ebebe0; padding-left: 4%; padding-bottom: 2%; padding-right: 3%;
         &__titulo {
@@ -125,7 +170,7 @@ div.sectorInfo {margin-left: 5%;}
                     border-bottom: 3px solid $gris;
         }
         &__texto {
-                    color: $azulmedio;
+                    font-size: 15px;
                     font-family: $texto-comun;
                     font-weight: 400;
         }
@@ -134,16 +179,19 @@ div.sectorInfo {margin-left: 5%;}
 .hola {
     padding-top: 10px; padding-bottom: 10px;
     &__encabezado {
-                    letter-spacing: 5px;
+                    font-size: 30px; font-weight: 700; margin: 18px; text-align: center;
          }
     &__texto {
-            background-color: $gris;
+            margin: 10px 15px;
+            text-align: justify;
+            background-color: $amarillo;
             font-size: 120%;
         }
     }
-.campoForm{text-align: center; margin: auto; font-size: 130%; color: $naranja; font-weight: 300;}
+.compuHola{width: 70%; margin-left: 40px;}
+.campoForm{margin-left: 15px; text-align: center; font-family: $texto-comun; font-weight: 400; margin: auto; font-size: 130%; color: $naranja; font-weight: 300;}
 h4{color: $amarillo; font-family: $subtitulos; font-size: $h4; text-align: center; padding-left: 10px; padding-top: 5px;}
-div.formulario{display: flex; justify-content: center; padding-left: 15px; background-color: $gris; width: 90%; margin: 7px; margin-left: 20px; border-radius: 5px; box-shadow: 2px 5px 12px $azulnegro;}
+div.formulario{display: flex; justify-content: center; padding-bottom: 15px; padding-left: 45px; background-color: $gris; width: 90%; margin: 7px; margin-left: 20px; border-radius: 5px; box-shadow: 2px 5px 12px $azulnegro;}
 form{width: 215px;}
 .colorBoton {background-image: linear-gradient(to right, $naranja, $amarillo)};
 }/*Cierre Vista Mobile*/
@@ -151,26 +199,25 @@ form{width: 215px;}
  /*Vista Desktop------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1024px){
     /*General*/
-.textoIndex{display: flex; justify-content: left; padding-top: 40px;}
-.tituloIndex{margin-left: 35px; color: $amarillo; font-family: $tituloImpact; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: left;}
-.introIndex1{margin-left: 30px; padding: 20px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 30px; text-align: left; border-bottom: solid blue 2px}
-.introIndex2{margin-left: 30px; padding-bottom: 10px; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 30px; text-align: left;}
+.textoIndex{flex-flow: row wrap; margin-top: 30px;}
+.tituloIndex{margin-left: 15px; padding-top: 15px; color: $amarillo; font-family: $tituloImpact; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: left;}
+.introIndex1{line-height: 1em; margin-left: 15px; padding: 20px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 25px; text-align: left; border-bottom: solid blue 2px}
+.introIndex2{line-height: 1em; margin-left: 20px; padding: 10px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 25px; text-align: justify;}
 h2{color: $naranja; font-family: $subtitulos;font-size: $h2;}
-.logoIndex{width: 70%; padding-top: 10px; padding-left: 30px;}
+.logoIndex{width: 40%; padding-top: 10px; padding-left: 30px;}
+div.botonInfo{justify-content: center; margin-left: 15px;}
+.btn-info{font-size: 20px; color: blue; background-color: yellow; padding: 5px 20px}
     /*Index Desktop*/
-.imagen-derecha{animation-name: imagen-derecha; animation-iteration-count: infinite; animation-duration: 4s;}
-.imagen-izquierda{animation-name: imagen-izquierda; animation-iteration-count: infinite; animation-duration: 4s;}
+.divCarousel{display: flex;}
+div.carousel{flex-flow: row wrap;}
 .bienvenida {margin-top: 4%; color: $azulclaro; font-weight: 1000; font-size: 70px; letter-spacing: 2px; font-family: $subtitulos;}
-   /* &__texto2 {color: $azulclaro; font-size: 210%; font-family: $subtitulos; padding-top: 10px;}
-    &__texto3 {color: $azulclaro; font-size: 210%; font-family: $subtitulos; text-align: right;}
-    &__imagen {width: 90%;}*/
 
     /*Portfolio Desktop*/
 .logoPort{width: $widthLogoGrande; padding: 2px; padding-bottom: 10px;}
 .submenu {
-    background-image: linear-gradient(to bottom, $gris, $azulclaro);
-    &__titulo {color: $naranja; font-family: $subtitulos;font-size: 4vw;}
-    &__texto {font-family: $texto-comun; color:$azulmedio!important; font-weight: 600;}
+    background-color: $gris;
+    &__titulo {color: $naranja; font-family: $tituloImpact; font-size: 3vw;}
+    &__texto {font-family: $texto-comun; font-weight: 600;}
 }
     .charco {
         font-family: $texto-comun; color: $azulmedio;
@@ -188,18 +235,18 @@ h2{color: $naranja; font-family: $subtitulos;font-size: $h2;}
         font-weight: 400;
     }
     /*Diseño Desktop*/
-.divServicio{margin-left: 50px; justify-content: center;} /*arreglar centrar*/
+.divServicio{margin-left: 50px; justify-content: center;} 
 .tituloDi{margin-top: 30px; color: $amarillo; font-family: $tituloImpact; font-size: 40px; font-weight: 800;}
-.introDi{padding: 20px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 30px;}
+.introDi{color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 30px; padding-top: 20px; padding-bottom: 20px;}
 .btn-contactarme{font-size: 20px; color: blue; background-color: yellow;}
-.bordeBajo{justify-content: center; border-bottom: solid $naranja 2px;}
-.contenedorGeneral {display: flex; flex-flow: row wrap; margin-left: 50px;}
-.contenedorServicio{width: 400px; height: 4o0px; display: flex; flex-flow: row wrap; justify-content: center; align-items: center;}
+.bordeBajo{justify-content: center; border-bottom: solid $naranja 2px; padding-bottom: 20px; margin-bottom: 20px;}
+.contenedorGeneral {display: flex; flex-flow: row wrap; padding-left: 50px;}
+.contenedorServicio{width: 400px; height: 400px; display: flex; flex-flow: row wrap; justify-content: center; align-items: center;}
 .contenedorServicio figure{position: relative; width: 400px; height: 400px; overflow: hidden; border-radius: 6px; box-shadow: 0px 15px 25px darkslategrey;}
 .contenedorServicio figure img{width: 400px; height: 400px; transition: all 500ms ease-out;}
 .contenedorServicio figure .capa{position: absolute; top:0;width: 100%;height:100%;background: rgba(11,103,123,0.6);transition: all 500ms ease-out;opacity: 0;visibility: hidden;text-align: center;}
 .contenedorServicio figure:hover > .capa {opacity: 1;visibility: visible;}
-.contenedorServicio figure:hover > .capa h3 {margin-top: 70px;margin-bottom: 15px;}
+.contenedorServicio figure:hover > .capa h3 {margin-top: 70px; margin-bottom: 15px;}
 .contenedorServicio figure:hover .capa h3{opacity: 1; visibility: visible; margin-top: 50px; margin-bottom: 10px;}
 .contenedorServicio figure:hover .capa p{opacity: 1; visibility: visible; margin-top: 50px; margin-bottom: 10px;}
 .contenedorServicio figure .capa:hover{position: absolute; height: 100%; width: 100%; background-color: rgba(120, 103, 123, 0.6); transition: all 500ms ease-out; opacity: 0; visibility: hidden; text-align: center;}
@@ -209,8 +256,8 @@ h2{color: $naranja; font-family: $subtitulos;font-size: $h2;}
 .contenedorServicio figure .capa p:hover{visibility: visible; color: $amarillo; font-weight: 30px;} 
 .figura:hover{background-color: rgba(45, 44, 46, 0.4);}     
 .servicios{justify-content: center;}
-.sectorServicios {background-image: linear-gradient(to bottom, $gris, $azulclaro);}
-    /*Sobre mí*/
+
+    /*Sobre mí Desktop*/
 img.logoSobre {width: 90%; transform: translate(60px, 60px);}
 div.sectorInfo {margin-left: 5%; margin-top: 5px;}
 .info {
@@ -244,26 +291,8 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
     }
 }
 .logoContacto{width: 40%; padding: left 30px;}
-.containerContacto{margin: 40px;}
+.containerContacto{margin-top: 40px;}
 .campoForm{font-size: 130%; color: $naranja; font-weight: 500;}
 .formulario{display: flex; justify-content: center; padding-top: 15px; padding-bottom: 25px;  background-color: $gris; width: 450px; border-radius: 15px; box-shadow: 7px 13px 37px $azulmedio;}
-.colorBoton {background-image: linear-gradient(to right, $azulnegro, $azulmedio)};
+.colorBoton {background-image: linear-gradient(to right, $azulnegro, $azulmedio)}
 }/*-----------Cierre Vista Desktop-----------------------------------------------------------*/
-
-/*Portfolio*/
-.contenedorAlbum{background-image: linear-gradient(to bottom, $azulclaro, $gris);}
-/*Diseño*/
-.servicios {
-    background-image: linear-gradient(to bottom, $gris, $azulclaro);
-        &__titulo {transform: translateY(-10px);}
-        &__texto {font-family: $texto-comun; color: $azulmedio;}
-}
-.tarjetas {
-    border: 2px solid;
-    &__titulo {color: $naranja; font-weight: 600;}
-    &__texto {font-weight: 400; font-family: $texto-comun;}
-}
-.fondoTarjetas {background-image: linear-gradient(to bottom, $gris, $azulclaro);}
-/*Sobre Mi*/
-
-/*Contacto*/

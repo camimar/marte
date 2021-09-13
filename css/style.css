@@ -14,7 +14,8 @@ $gris: #c5c8d0;*/
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  background-color: #f2f2bd; }
 
 .row {
   margin-right: -15px;
@@ -34,15 +35,16 @@ body {
   margin: 0;
   padding: 0; }
 
-/*Prueba de NavBar Fixed ----- Ver si puedo anidar con BEM--------------------------------------------------*/
+/*Prueba de NavBar Fixed*/
 .headerNav {
+  z-index: 100;
   background-color: #ffd11a;
   height: 5rem;
   color: #000d1a;
   text-decoration: none;
   font-size: 1.3rem;
   padding: 2 rem 0;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   right: 0; }
@@ -91,19 +93,27 @@ li > a:hover::after, li > a.active-nav::after {
   width: 100%;
   background: #000d1a; }
 
-main {
-  padding-top: 6rem; }
-
+/*main{padding-top: 6rem;}*/
 .banner {
   width: 100%; }
 
 /*aca me sigue quedando margen a los costados*/
+.carousel-control-next-icon {
+  filter: invert(100%); }
+
+.carousel-control-prev-icon {
+  filter: invert(100%); }
+
+.mainColor {
+  background-color: #f2f2bd; }
+
 footer {
   margin-top: 40px; }
 
 .pie {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  background-color: #f2f2bd;
+  padding-top: 30px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
@@ -113,19 +123,57 @@ footer {
   .pie__logo:hover {
     transform: rotate(60deg); }
 
+.pieIndex {
+  background-color: #f2f2bd;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .pieIndex__logo {
+    width: 45%;
+    transition: all 0.5s; }
+  .pieIndex__logo:hover {
+    transform: rotate(60deg); }
+
+/*Portfolio*/
+.contenedorAlbum {
+  background-image: linear-gradient(to top, #f2f2bd, #c5c8d0); }
+
+/*Diseño*/
+.tarjetas {
+  border: 2px solid; }
+  .tarjetas__titulo {
+    color: #ff9900;
+    font-weight: 600; }
+  .tarjetas__texto {
+    font-weight: 400;
+    font-family: "Questrial Regular", sans-serif; }
+
+.fondoTarjetas {
+  background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
+
+/*Sobre Mi*/
+div.carouselSobreMi {
+  border-bottom: solid 15px #ffd11a; }
+
+.btn-carousel-sobremi {
+  width: 10%;
+  background-color: #ffd11a; }
+
+.sectorInfo {
+  border-top: solid 15px #ff9900;
+  border-bottom: solid 25px #ff9900;
+  margin-right: 20px;
+  background-color: #ffd11a; }
+
+/*Contacto*/
 /*Vista Mobile--------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
   /*General*/
   * {
     margin: 0;
     padding: 0; }
-  .tituloIndex {
-    color: #ffd11a;
-    font-family: "Questrial Regular", sans-serif !important;
-    font-size: 300%;
-    letter-spacing: 2px;
-    padding-left: 3%;
-    padding-top: 4%; }
   h1 {
     color: #ffd11a;
     font-family: "Questrial Regular", sans-serif !important;
@@ -137,21 +185,29 @@ footer {
     color: #ff9900;
     font-family: "Questrial Regular", sans-serif;
     font-size: 50px; }
-  img.logoInicio {
-    width: 20%;
-    height: 20%;
-    padding-top: 5px; }
+  .logoNav {
+    width: 15%;
+    height: 15%;
+    margin-left: 10px;
+    margin-top: 10px; }
   /*navBar fixed*/
   .navigation {
     width: 100%;
     margin-top: 1rem; }
   .menuIcon {
-    display: block;
-    cursor: pointer; }
+    display: flex;
+    cursor: pointer;
+    margin: 0 1rem;
+    justify-content: flex-end; }
+  .menuHam {
+    vertical-align: middle;
+    border-style: none;
+    object-fit: contain; }
   .navigation ul {
     display: none; }
   .navigation ul.show {
-    display: block; }
+    display: block;
+    background-color: #ffd11a; }
   .navigation ul li {
     display: block; }
   .navigation ul li a {
@@ -159,105 +215,154 @@ footer {
     display: block;
     padding: 0.5rem 1rem;
     transition: all 0.4s; }
-  footer {
-    width: 340px; }
+  /*footer {width: 340px;}*/
   .afooter {
     width: 70px; }
   .pie {
-    margin-left: 5px;
-    margin-right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 7px; }
+    padding: 0 0 10px 30px; }
     .pie__logo {
-      width: 40%;
+      width: 50%;
       transition: all 0.5s;
-      margin-left: 9px; }
+      margin-left: 5px; }
     .pie__logo:hover {
       transform: rotate(60deg); }
   /*Index Mobile*/
   div.carousel {
     margin: 5px 15px;
     width: 90%; }
-  .bienvenida {
-    margin-top: 4%;
-    margin-left: 4%; }
-    .bienvenida__titulo {
-      color: #247878;
-      font-weight: 1000;
-      font-size: 200%;
-      letter-spacing: 2px;
-      font-family: "Questrial Regular", sans-serif;
-      text-align: center; }
-    .bienvenida__texto2 {
-      color: #247878;
-      font-size: 140%;
-      font-family: "Questrial Regular", sans-serif;
-      padding-top: 10px; }
-    .bienvenida__texto3 {
-      color: #247878;
-      font-size: 140%;
-      font-family: "Questrial Regular", sans-serif;
-      text-align: center; }
-    .bienvenida__imagen {
-      width: 75%;
-      margin-left: 25px; }
+  .textoIndex {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 30px; }
+  .tituloIndex {
+    padding-top: 15px;
+    color: #ffd11a;
+    font-family: "Barlow Condensed", fantasy !important;
+    font-size: 50px;
+    letter-spacing: 8px;
+    text-decoration: underline;
+    text-align: center; }
+  .introIndex1 {
+    margin-left: 5px;
+    padding: 15px 0;
+    color: #1d6262;
+    font-family: 'Questrial Regular', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    border-bottom: solid blue 2px; }
+  .introIndex2 {
+    margin-left: 5px;
+    padding-bottom: 2px;
+    color: #1d6262;
+    font-family: 'Questrial Regular', sans-serif;
+    font-size: 20px;
+    text-align: justify; }
+  .introIndex3 {
+    color: blue;
+    font-family: 'Questrial Regular', sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    text-align: center; }
+  .logoIndex {
+    width: 50%;
+    padding: 10px;
+    margin-left: 65px; }
+  div.botonInfo {
+    justify-content: center;
+    margin-left: 30px; }
+  .btn-info {
+    font-size: 20px;
+    color: blue;
+    background-color: yellow;
+    padding: 5px 20px; }
+  .pieIndex {
+    margin-left: 35px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px; }
+    .pieIndex__logo {
+      width: 50%;
+      transition: all 0.5s;
+      margin-left: 9px; }
+    .pieIndex__logo:hover {
+      transform: rotate(60deg); }
   /*Portfolio Mobile*/
   img.logoPort {
     width: 20%;
     height: 20%;
     padding-top: 5px; }
   .submenu {
-    background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
+    background-image: linear-gradient(to top, #c5c8d0, #f2f2bd); }
     .submenu__titulo {
       color: #ff9900;
-      font-family: 'Cantarell Regular';
+      font-family: "Barlow Condensed", fantasy;
       font-weight: 400;
       font-size: 40px; }
     .submenu__texto {
       font-family: "Questrial Regular", sans-serif;
       color: #1d6262 !important;
       font-weight: 600; }
-  div.divCharco {
-    margin-left: 15px;
-    width: 88%; }
   .imgcharco {
-    margin-left: 25px;
-    width: 85%; }
+    width: 100%; }
+  .contenedorAlbum {
+    background-image: linear-gradient(to top, #f2f2bd, #f2f2bd); }
   /*Diseño Mobile*/
-  /*.navDi{width: 290px; margin-right: 0; margin-left: 15px;}*/
-  .sectorServicios {
-    width: 300px;
-    background-color: #c5c8d0; }
-  /*.tituloDisenio{color: $amarillo; font-family: $titulos!important; justify-content: left; font-size: 55px; letter-spacing: 3px; margin: 5px;}*/
-  .contenedorGeneral {
-    display: flex;
-    flex-direction: column; }
   .contenedorServicio {
     justify-content: center;
     width: 300px;
-    margin-left: 10px;
-    margin-top: 10px;
-    border: solid 2px #247878;
-    background-image: linear-gradient(to top, #1d6262, #c5c8d0); }
-  .capa p {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400; }
-  .capa h3 {
-    text-align: center; }
+    margin-left: 40px;
+    margin-top: 15px;
+    border: solid 2px blue;
+    background-image: linear-gradient(to top, white, #c5c8d0); }
   .disenio {
     width: 270px;
     justify-content: center;
     padding-left: 15px;
     padding-top: 7px; }
+  .divServicio {
+    margin-left: 60px;
+    justify-content: center; }
+  /*arreglar centrar*/
+  .tituloDi {
+    margin-top: 30px;
+    color: #ffd11a;
+    font-family: "Barlow Condensed", fantasy;
+    font-size: 30px;
+    font-weight: 800; }
+  .introDi {
+    padding: 20px 0;
+    color: #1d6262;
+    font-family: 'Questrial Regular', sans-serif;
+    font-size: 20px; }
+  .btn-contactarme {
+    margin-left: 40px;
+    font-size: 20px;
+    color: blue;
+    background-color: yellow; }
+  h3 {
+    text-align: center; }
+  p {
+    text-align: center; }
   /*Sobre Mi Mobile*/
+  .carouselSobreMi {
+    width: 95%; }
   img.logoSobre {
-    width: 90%;
-    transform: translate(60px, 60px); }
+    width: 60%;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   div.sectorInfo {
-    margin-left: 5%; }
+    margin: 0;
+    width: 100%; }
+  .featurette-heading {
+    font-size: 35px;
+    padding-top: 10px;
+    text-align: center; }
   .info {
     background-color: #ebebe0;
     padding-left: 4%;
@@ -267,7 +372,7 @@ footer {
       padding-bottom: 3px;
       border-bottom: 3px solid #c5c8d0; }
     .info__texto {
-      color: #1d6262;
+      font-size: 15px;
       font-family: "Questrial Regular", sans-serif;
       font-weight: 400; }
   /*Contacto Mobile*/
@@ -275,12 +380,23 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px; }
     .hola__encabezado {
-      letter-spacing: 5px; }
+      font-size: 30px;
+      font-weight: 700;
+      margin: 18px;
+      text-align: center; }
     .hola__texto {
-      background-color: #c5c8d0;
+      margin: 10px 15px;
+      text-align: justify;
+      background-color: #ffd11a;
       font-size: 120%; }
+  .compuHola {
+    width: 70%;
+    margin-left: 40px; }
   .campoForm {
+    margin-left: 15px;
     text-align: center;
+    font-family: "Questrial Regular", sans-serif;
+    font-weight: 400;
     margin: auto;
     font-size: 130%;
     color: #ff9900;
@@ -295,7 +411,8 @@ footer {
   div.formulario {
     display: flex;
     justify-content: center;
-    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
     background-color: #c5c8d0;
     width: 90%;
     margin: 7px;
@@ -312,11 +429,11 @@ footer {
 @media only screen and (min-width: 1024px) {
   /*General*/
   .textoIndex {
-    display: flex;
-    justify-content: left;
-    padding-top: 40px; }
+    flex-flow: row wrap;
+    margin-top: 30px; }
   .tituloIndex {
-    margin-left: 35px;
+    margin-left: 15px;
+    padding-top: 15px;
     color: #ffd11a;
     font-family: "Barlow Condensed", fantasy;
     font-size: 50px;
@@ -324,37 +441,43 @@ footer {
     text-decoration: underline;
     text-align: left; }
   .introIndex1 {
-    margin-left: 30px;
+    line-height: 1em;
+    margin-left: 15px;
     padding: 20px 0;
     color: #1d6262;
     font-family: 'Questrial Regular', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     border-bottom: solid blue 2px; }
   .introIndex2 {
-    margin-left: 30px;
-    padding-bottom: 10px;
+    line-height: 1em;
+    margin-left: 20px;
+    padding: 10px 0;
     color: #1d6262;
     font-family: 'Questrial Regular', sans-serif;
-    font-size: 30px;
-    text-align: left; }
+    font-size: 25px;
+    text-align: justify; }
   h2 {
     color: #ff9900;
     font-family: "Questrial Regular", sans-serif;
     font-size: 5vw; }
   .logoIndex {
-    width: 70%;
+    width: 40%;
     padding-top: 10px;
     padding-left: 30px; }
+  div.botonInfo {
+    justify-content: center;
+    margin-left: 15px; }
+  .btn-info {
+    font-size: 20px;
+    color: blue;
+    background-color: yellow;
+    padding: 5px 20px; }
   /*Index Desktop*/
-  .imagen-derecha {
-    animation-name: imagen-derecha;
-    animation-iteration-count: infinite;
-    animation-duration: 4s; }
-  .imagen-izquierda {
-    animation-name: imagen-izquierda;
-    animation-iteration-count: infinite;
-    animation-duration: 4s; }
+  .divCarousel {
+    display: flex; }
+  div.carousel {
+    flex-flow: row wrap; }
   .bienvenida {
     margin-top: 4%;
     color: #247878;
@@ -362,23 +485,19 @@ footer {
     font-size: 70px;
     letter-spacing: 2px;
     font-family: "Questrial Regular", sans-serif; }
-  /* &__texto2 {color: $azulclaro; font-size: 210%; font-family: $subtitulos; padding-top: 10px;}
-    &__texto3 {color: $azulclaro; font-size: 210%; font-family: $subtitulos; text-align: right;}
-    &__imagen {width: 90%;}*/
   /*Portfolio Desktop*/
   .logoPort {
     width: 25%;
     padding: 2px;
     padding-bottom: 10px; }
   .submenu {
-    background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
+    background-color: #c5c8d0; }
     .submenu__titulo {
       color: #ff9900;
-      font-family: "Questrial Regular", sans-serif;
-      font-size: 4vw; }
+      font-family: "Barlow Condensed", fantasy;
+      font-size: 3vw; }
     .submenu__texto {
       font-family: "Questrial Regular", sans-serif;
-      color: #1d6262 !important;
       font-weight: 600; }
   .charco, .charco--georgie, .charco--willy {
     font-family: "Questrial Regular", sans-serif;
@@ -395,7 +514,6 @@ footer {
   .divServicio {
     margin-left: 50px;
     justify-content: center; }
-  /*arreglar centrar*/
   .tituloDi {
     margin-top: 30px;
     color: #ffd11a;
@@ -403,24 +521,27 @@ footer {
     font-size: 40px;
     font-weight: 800; }
   .introDi {
-    padding: 20px 0;
     color: #1d6262;
     font-family: 'Questrial Regular', sans-serif;
-    font-size: 30px; }
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .btn-contactarme {
     font-size: 20px;
     color: blue;
     background-color: yellow; }
   .bordeBajo {
     justify-content: center;
-    border-bottom: solid #ff9900 2px; }
+    border-bottom: solid #ff9900 2px;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
   .contenedorGeneral {
     display: flex;
     flex-flow: row wrap;
-    margin-left: 50px; }
+    padding-left: 50px; }
   .contenedorServicio {
     width: 400px;
-    height: 4o0px;
+    height: 400px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -493,9 +614,7 @@ footer {
     background-color: rgba(45, 44, 46, 0.4); }
   .servicios {
     justify-content: center; }
-  .sectorServicios {
-    background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
-  /*Sobre mí*/
+  /*Sobre mí Desktop*/
   img.logoSobre {
     width: 90%;
     transform: translate(60px, 60px); }
@@ -544,7 +663,7 @@ footer {
     width: 40%;
     padding: left 30px; }
   .containerContacto {
-    margin: 40px; }
+    margin-top: 40px; }
   .campoForm {
     font-size: 130%;
     color: #ff9900;
@@ -562,30 +681,3 @@ footer {
     background-image: linear-gradient(to right, #000d1a, #1d6262); } }
 
 /*-----------Cierre Vista Desktop-----------------------------------------------------------*/
-/*Portfolio*/
-.contenedorAlbum {
-  background-image: linear-gradient(to bottom, #247878, #c5c8d0); }
-
-/*Diseño*/
-.servicios {
-  background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
-  .servicios__titulo {
-    transform: translateY(-10px); }
-  .servicios__texto {
-    font-family: "Questrial Regular", sans-serif;
-    color: #1d6262; }
-
-.tarjetas {
-  border: 2px solid; }
-  .tarjetas__titulo {
-    color: #ff9900;
-    font-weight: 600; }
-  .tarjetas__texto {
-    font-weight: 400;
-    font-family: "Questrial Regular", sans-serif; }
-
-.fondoTarjetas {
-  background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
-
-/*Sobre Mi*/
-/*Contacto*/

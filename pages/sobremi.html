@@ -76,29 +76,23 @@
   </nav>-->
 
    <!--Intento NavBar fixed-->
-   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-10">
-        <header class="headerNav">
-            <div class="contenedorNav logo-nav-container">
-              <img src="../assets/img/logosobremi.png" class="logoNav wow bounceIn" alt="logo">
-              <span class="menuIcon">Ver menú</span>
-                <nav class="navigation">
-                  <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="disenio.html">DISEÑO</a></li>
-                    <li><a href="#">SOBRE MÍ</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                  </ul>
-                </nav>
-            </div>
-          </header>
-      </div>
-    </div>
-  </div>
+		<header class="headerNav">
+			<div class="contenedorNav logo-nav-container">
+				<img src="../assets/img/logosobremi.png" class="logoNav wow bounceIn" alt="logo">
+				<span class="menuIcon"><img class="menuHam" src="../assets/icons/menuHam.png" alt="logomenu" width="10%"></span>
+				<nav class="navigation">
+					<ul>
+						<li><a href="../index.html">INICIO</a></li>
+						<li><a href="portfolio.html">PORTFOLIO</a></li>
+						<li><a href="disenio.html">DISEÑO</a></li>
+						<li><a href="#">SOBRE MÍ</a></li>
+						<li><a href="contacto.html">CONTACTO</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
   
-<main role="main">
+<main class="mainColor" role="main">
   <!--Banner-->
   <div class="container-fluid">
     <div class="row">
@@ -108,62 +102,68 @@
     </div>
   </div>
   <!--Carousel fotos Martina-->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="container">
-          <div class="carousel-caption text-left">
-            <h1>HOLA! Mi nombre es Martina.</h1>
-            <p>Me encanta poder dejar un pedacito de mi arte por donde viajo (Foto de Wework Lima, Perú).</p>
-            <img src="../assets/img/sobremi1.jpg" alt="Foto Martina">
-          </div>
-        </div>
-      </div>
+  <div class="container-fluid carouselSobreMi">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-10">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="carousel-caption text-left">
+                    <h1>HOLA! Mi nombre es Martina.</h1>
+                    <p>Me encanta poder dejar un pedacito de mi arte por donde viajo (Foto de Wework Lima, Perú).</p>
+                    <img src="../assets/img/sobremi1.jpg" alt="Foto Martina">
+                  </div>
+                </div>
+              </div>
 
-      <div class="carousel-item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Me dedico al diseño y al arte.</h1>
-            <p>Mi trayectoria me permitió tener experiencias increíbles, como ser expositora en un Megaevento de Diseño de Latinoamérica (Foto de LadFest).</p>
-            <img src="../assets/img/sobremi2.jpg" alt="Foto Martina">
-          </div>
-        </div>
-      </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Me dedico al diseño y al arte.</h1>
+                    <p>Mi trayectoria me permitió tener experiencias increíbles, como ser expositora en un Megaevento de Diseño de Latinoamérica (Foto de LadFest).</p>
+                    <img src="../assets/img/sobremi2.jpg" alt="Foto Martina">
+                  </div>
+                </div>
+              </div>
 
-      <div class="carousel-item">
-        <div class="container">
-          <div class="carousel-caption text-right">
-            <h1>En esta sección te voy a contar sobre mí.</h1>
-            <p>Amo lo que hago y quiero compartir unas reflexiones de mi carrera con uds. (Foto de un mural en el Hipodromo de Palermo, Buenos Aires).</p>
-            <img src="../assets/img/sobremi3.jpg"  alt="Foto Martina">
-          </div>
-        </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="carousel-caption text-right">
+                    <h1>En esta sección te voy a contar sobre mí.</h1>
+                    <p>Amo lo que hago y quiero compartir unas reflexiones de mi carrera con uds. (Foto de un mural en el Hipodromo de Palermo, Buenos Aires).</p>
+                    <img src="../assets/img/sobremi3.jpg"  alt="Foto Martina">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev btn-carousel-sobremi" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next btn-carousel-sobremi" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div> <!--cierre carousel-->
       </div>
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
 
-    <hr class="featurette-divider">
+    <!--c<hr class="featurette-divider"> hequear esto???-->
 
     <div class="row featurette sectorInfo">
-      <div class="col-md-6 info">
+      <div class="col-lg-6 col-xs-6 col-md-6 info">
         <h2 class="featurette-heading">¿Quién soy y qué hago?</h2>
         <p class="sobremi lead">Mi nombre es Martina Galarza, y mi alias Marte. Tengo 29 años y soy diseñadora gráfica, artista de lettering y muralista. Soy especialista en crear experiencias visuales únicas, abarcando ilustración, lettering, diseño gráfico, muralismo y branding. Fui finalista en Young Guns 18, nominada por One Club for creativity en 2020 y también ganadora del Latin American Desing Award for Ilustration, en 2020. </p>
       </div>
-      <div class="col-md-4">
-        <img class= "logoSobre" src="../assets/img/logosobremi.png" alt="Logo Marte">
+      <div class="col-lg-4 col-md-4 col-xs-4">
+        <img class= "logoSobre wow fadeInRightBig" src="../assets/img/logosobremi.png" alt="Logo Marte">
       </div>
     </div>
     <!--Footer-->

@@ -40,74 +40,22 @@
   
 <!--Apertura Body-->
 <body>
-
-  <!--ROW Header y Titulo
-  <div class="container-fluid">
-    <header>
-      <div class="row">
-        <div class="col-lg-12 col-xs-10">
-            <h1 class="tituloPags wow slideInDown">PORTFOLIO</h1>
-        </div>
+    <!--Intento NavBar fixed-->
+    <header class="headerNav">
+      <div class="contenedorNav logo-nav-container">
+        <img src="../assets/img/logosobremi.png" class="logoNav wow bounceIn" alt="logo">
+        <span class="menuIcon"><img class="menuHam" src="../assets/icons/menuHam.png" alt="logomenu" width="10%"></span>
+        <nav class="navigation">
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="disenio.html">DISEÑO</a></li>
+            <li><a href="sobremi.html">SOBRE MÍ</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-  </div>-->
-  <!---NavBar Bootstrap centrada
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="col-lg-12 col-xs-12 col-md-12 navbar navbar-expand-lg navbar-light bg-light rounded navPags">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-          <ul class="navbar-nav navContacto">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">INICIO</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown10">
-                    <a class="dropdown-item" href="#">CHARCO</a>
-                    <a class="dropdown-item" href="#">OBRAS</a>
-                    <a class="dropdown-item" href="#">POSTERS</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="disenio.html">DISEÑO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sobremi.html">SOBRE MÍ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
-    </div> 
-  </div>  -->
-
-  <!--Intento NavBar fixed-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-10">
-        <header class="headerNav">
-            <div class="contenedorNav logo-nav-container">
-              <img src="../assets/img/logosobremi.png" class="logoNav wow bounceIn" alt="logo">
-              <span class="menuIcon">Ver menú</span>
-                <nav class="navigation">
-                <ul>
-                  <li><a href="../index.html">INICIO</a></li>
-                  <li><a href="#">PORTFOLIO</a></li>
-                  <li><a href="disenio.html">DISEÑO</a></li>
-                  <li><a href="sobremi.html">SOBRE MÍ</a></li>
-                  <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-                </nav>
-            </div>
-          </header>
-      </div>
-    </div>
-  </div>
 
 <main role="main">
   <!--Banner-->
@@ -126,8 +74,8 @@
         <h2 class="submenu__titulo">OBRAS</h2>
         <p class="lead text-muted submenu__texto submenu__texto--estilo">Disfruto del proceso creativo tanto en lo laboral, como en lo personal. Te muestro algunas de mis obras personales.</p>
         <p>
-          <a href="portfolio.html" class="btn btn-primary my-2">CHARCO</a>
-          <a href="#" class="btn btn-secondary my-2">OBRAS</a>
+          <a href="portfolio.html" class="btn btn-secondary my-2">CHARCO</a>
+          <a href="#" class="btn btn-primary my-2">OBRAS</a>
           <a href="portfolio-posters.html" class="btn btn-secondary my-2">POSTERS</a>
         </p>
       </div>
@@ -140,71 +88,57 @@
         <div class="row">
           <div class="col-md-4 divCharco">
             <div class="card mb-4 shadow-sm charco--georgie">
-              <img class="georgie__imagen imgcharco" src="../assets/img/charcogeorgies.jpg" alt="Branding Georgies" width="100%">
-              <div class="card-body">
-                <p class="card-text georgie__texto">Georgie's es una taqueria en Villa Crespo. En Charco realizamos el trabajo de marca, su logotipo y diseño.</p>
-              </div>
+              <img class="georgie__imagen imgcharco" src="../assets/img/obras1.png" alt="Branding Georgies" width="100%">
+              <!--<div class="card-body">
+               Aca iría texto con etiquetas p
+              </div>-->
             </div>
           </div>
           <div class="col-md-4 divCharco">
             <div class="card mb-4 shadow-sm charco charco--georgie">
-              <img class="georgie__imagen imgcharco" src="../assets/img/charcogeorgies2.png" alt="Logo Georgies" width="100%">
-              <div class="card-body">
-                <p class="card-text georgie__texto">Georgie's es una taqueria en Villa Crespo. En Charco realizamos el trabajo de marca, su logotipo y diseño.</p>
-              </div>
+              <img class="georgie__imagen imgcharco" src="../assets/img/obras2.png" alt="obras" width="100%">
             </div>
           </div>
           <div class="col-md-4 divCharco">
             <div class="card mb-4 shadow-sm charco--willy">
-              <img class="imgcharco" src="../assets/img/charcomudra.jpg" alt="Branding Mudra" width="100%">
-              <div class="card-body">
-                <p class="card-text">Mudrá es un restaurante situado en Buenos Aires, con la innovadora propuesta 100% plant-based. Trabajamos en su logo y el diseño de su carta y lettering.</p>
-              </div>
+              <img class="imgcharco" src="../assets/img/obras3.jpg" alt="obras" width="100%">
             </div>
           </div>
-
           <div class="col-md-4 divCharco">
             <div class="card mb-4 shadow-sm charco--willy">
-              <img class="imgcharco" src="../assets/img/charcomudra2.png" alt="Logo Mudra" width="100%">
-              <div class="card-body">
-                <p class="card-text">Mudrá es un restaurante situado en Buenos Aires, con la innovadora propuesta 100% plant-based. Trabajamos en su logo y el diseño de su carta y lettering.</p>
-              </div>
+              <img class="imgcharco" src="../assets/img/obras4.png" alt="obras" width="100%">
             </div>
           </div>
           <div class="col-md-4 divCharco">
             <div class="card mb-4 shadow-sm charco charco--willy">
-              <img class="willy__imagen imgcharco" src="../assets/img/charcowilliamsburg.jpg" alt="Branding Williasmburg" width="100%">
-              <div class="card-body willy__texto">
-                <p class="card-text">Williamsburg obtuvo el premio a la mejor hamburguesa en el 2018. Aqui tuvimos un trabajo completo de branding: Diseñamos su logo, Menu, el packaking en sus presentaciones para delivery y take away.</p>
-              </div>
+              <img class="willy__imagen imgcharco" src="../assets/img/obras5.jpg" alt="obras" width="100%">
             </div>
           </div>
           <div class="col-md-4 divCharco">
             <div class="card mb-4 shadow-sm charco--willy">
-              <img class="willy__imagen imgcharco" src="../assets/img/charcowilliamsburg2.png" alt="Lettering Williasmburg" width="100%">
-              <div class="card-body willy__texto">
-                <p class="card-text">Williamsburg obtuvo el premio a la mejor hamburguesa en el 2018. Aqui tuvimos un trabajo completo de branding: Diseñamos su logo, Menu, el packaking en sus presentaciones para delivery y take away. </p>
-              </div>
+              <img class="willy__imagen imgcharco" src="../assets/img/obras6.jpg" alt="obras" width="100%">
             </div>
           </div>
         </div>
       </div>
     </div>
   </div> <!--Cierre Container Fluid-->
-</main>
-<!--Footer-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-12 col-xs-12 col-md-12">
-    <footer class="pie">
-      <a class="afooter" href="https://www.instagram.com/marte_______/"><img class="pie__logo logo--tamanio" src="../assets/icons/logoig.png" alt="logo Instagram"></a>
-      <a class="afooter" href="https://www.facebook.com/martevisual.dg"><img class="pie__logo logo--tamanio" src="../assets/icons/logofb.png" alt="logo facebook"></a>
-      <a class="afooter" href="https://www.behance.net/martevisual"><img class="pie__logo logo--tamanio" src="../assets/icons/logobe.png" alt="logo Behance"></a>
-      <a class="afooter" href="#"> <img class="pie__logo logo--tamanio" src="../assets/icons/logomail.png" alt="logo mail"></a>
-    </footer>
+
+  <!--Footer-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 col-md-12">
+      <footer class="pie">
+        <a class="afooter" href="https://www.instagram.com/marte_______/"><img class="pie__logo logo--tamanio" src="../assets/icons/logoig.png" alt="logo Instagram"></a>
+        <a class="afooter" href="https://www.facebook.com/martevisual.dg"><img class="pie__logo logo--tamanio" src="../assets/icons/logofb.png" alt="logo facebook"></a>
+        <a class="afooter" href="https://www.behance.net/martevisual"><img class="pie__logo logo--tamanio" src="../assets/icons/logobe.png" alt="logo Behance"></a>
+        <a class="afooter" href="#"> <img class="pie__logo logo--tamanio" src="../assets/icons/logomail.png" alt="logo mail"></a>
+      </footer>
+      </div>
     </div>
   </div>
-</div>
+
+</main>
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
