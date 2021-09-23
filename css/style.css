@@ -111,9 +111,10 @@ footer {
   margin-top: 40px; }
 
 .pie {
-  background-color: #f2f2bd;
   padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  background-color: #ffd11a;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
@@ -138,7 +139,7 @@ footer {
 
 /*Portfolio*/
 .contenedorAlbum {
-  background-image: linear-gradient(to top, #f2f2bd, #c5c8d0); }
+  background-color: #f2f2bd; }
 
 /*Diseño*/
 .tarjetas {
@@ -310,7 +311,7 @@ div.carouselSobreMi {
   .imgcharco {
     width: 100%; }
   .contenedorAlbum {
-    background-image: linear-gradient(to top, #f2f2bd, #f2f2bd); }
+    background-color: #f2f2bd; }
   /*Diseño Mobile*/
   .contenedorServicio {
     justify-content: center;
@@ -491,7 +492,7 @@ div.carouselSobreMi {
     padding: 2px;
     padding-bottom: 10px; }
   .submenu {
-    background-color: #c5c8d0; }
+    background-color: #f2f2bd; }
     .submenu__titulo {
       color: #ff9900;
       font-family: "Barlow Condensed", fantasy;
@@ -673,6 +674,8 @@ div.carouselSobreMi {
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 25px;
+    margin-bottom: 50px;
+    margin-top: 40px;
     background-color: #c5c8d0;
     width: 450px;
     border-radius: 15px;
