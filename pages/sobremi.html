@@ -93,12 +93,13 @@
 		</header>
   
 <main class="mainColor" role="main">
- 
-  <div>
-    <img class="banner" src="../assets/img/banner3.png" alt="banner">
-  </div>
-    <!--Carousel alternativo desktop-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <!--Banner imagen tipo header-->
+    <div>
+      <img class="banner" src="../assets/img/banner3.png" alt="banner">
+    </div>
+
+    <!--Carousel desktop-->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-desktop" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -106,24 +107,24 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../assets/img/carousel1.png" class="d-block w-100" alt="Martina">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="titulo-carousel-1">HOLA! Mi nombre es Martina.</h5>
-            <p class="texto-carousel-1">Me encanta poder dejar un pedacito de mi arte por donde viajo (Foto de Wework Lima, Perú).</p>
+          <img src="../assets/img/carousel1.jpg" class="d-block w-100" alt="Martina">
+          <div class="carousel-caption d-none d-md-block escrito-carousel">
+            <h5 class="titulo-carousel">HOLA! Mi nombre es Martina.</h5>
+            <p class="texto-carousel">Me encanta poder dejar un pedacito de mi arte por donde viajo.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/carousel2.png" class="d-block w-100" alt="Martina">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="titulo-carousel-2">Me dedico al diseño y al arte.</h5>
-            <p class="texto-carousel-2">Mi trayectoria me permitió tener experiencias de diferentes magnitudes dentro del mundo del arte y el diseño. (Foto de mural en Bernal)</p>
+          <img src="../assets/img/carousel2.jpg" class="d-block w-100" alt="Martina">
+          <div class="carousel-caption d-none d-md-block escrito-carousel">
+            <h5 class="titulo-carousel2">Me dedico al diseño y al arte.</h5>
+            <p class="texto-carousel2">Mi trayectoria me permitió tener experiencias de diferentes magnitudes dentro del mundo del arte y el diseño.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="../assets/img/carousel3.jpg" class="d-block w-100" alt="Martina">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="titulo-carousel-3">Amo lo que hago y quiero compartirlo con el mundo..</h5>
-            <p class="texto-carousel-3">.. Así que en esta sección les voy a contar sobre mí.(Foto en House of Prints, produciendo para la muestra Female Power, Buenos Aires, 2018).</p>
+          <div class="carousel-caption d-none d-md-block escrito-carousel">
+            <h5 class="titulo-carousel">Amo lo que hago..</h5>
+            <p class="texto-carousel">..  y disfruto compartirlo, por eso quiero contarles sobre mí.</p>
           </div>
         </div>
       </div>
@@ -137,62 +138,48 @@
       </a>
     </div> <!--Cierre carousel alternativo desktop-->
 
-  <!--Carousel fotos Martina
-  <div class="container-fluid carouselSobreMi">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-10">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="container">
-                  <div class="carousel-caption text-left">
-                    <h1>HOLA! Mi nombre es Martina.</h1>
-                    <p>Me encanta poder dejar un pedacito de mi arte por donde viajo (Foto de Wework Lima, Perú).</p>
-                    <img src="../assets/img/sobremi1.jpg" alt="Foto Martina">
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Me dedico al diseño y al arte.</h1>
-                    <p>Mi trayectoria me permitió tener experiencias increíbles, como ser expositora en un Megaevento de Diseño de Latinoamérica (Foto de LadFest).</p>
-                    <img src="../assets/img/sobremi2.jpg" alt="Foto Martina">
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="container">
-                  <div class="carousel-caption text-right">
-                    <h1>En esta sección te voy a contar sobre mí.</h1>
-                    <p>Amo lo que hago y quiero compartir unas reflexiones de mi carrera con uds. (Foto de un mural en el Hipodromo de Palermo, Buenos Aires).</p>
-                    <img src="../assets/img/sobremi3.jpg"  alt="Foto Martina">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev btn-carousel-sobremi" href="#myCarousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next btn-carousel-sobremi" href="#myCarousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-        </div> 
+    <!--Carousel Mobile-->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-mobile" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/img/carouselmob1.jpg" class="d-block w-100" alt="Martina">
+          <div class="carousel-caption d-none d-md-block escrito-carousel">
+            <h5 class="titulo-carousel">HOLA! Mi nombre es Martina.</h5>
+            <p class="texto-carousel">Me encanta poder dejar un pedacito de mi arte por donde viajo.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/carouselmob2.jpg" class="d-block w-100" alt="Martina">
+          <div class="carousel-caption d-none d-md-block escrito-carousel">
+            <h5 class="titulo-carousel2">Me dedico al diseño y al arte.</h5>
+            <p class="texto-carousel2">Mi trayectoria me permitió tener experiencias de diferentes magnitudes dentro del mundo del arte y el diseño.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/carouselmob3.jpg" class="d-block w-100" alt="Martina">
+          <div class="carousel-caption d-none d-md-block escrito-carousel">
+            <h5 class="titulo-carousel">Amo lo que hago..</h5>
+            <p class="texto-carousel">..  y disfruto compartirlo, por eso quiero contarles sobre mí.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>cierre carousel-->
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> <!--Cierre carousel alternativo Mobile-->
 
-    <!--c<hr class="featurette-divider"> hequear esto???-->
 
+    <!--Sector Quien soy que hago-->
     <div class="row featurette sectorInfo">
       <div class="col-lg-6 col-xs-6 col-md-6 info">
         <h2 class="featurette-heading">¿Quién soy y qué hago?</h2>
@@ -202,50 +189,43 @@
         <img class= "logoSobre wow fadeInRightBig" src="../assets/img/logosobremi.png" alt="Logo Marte">
       </div>
     </div>
-    <!--Footer alternativo-->
+    <!--Footer-->
     <footer class="pie">
       <div class="col-md-4 col-lg-3">
         <div class="footer-about">
-            <h3>About</h3>
-            <p>Martina Galarza Aka Marte es diseñadora, artista, ilustradora argentina. Podes visitar la página de su branding studio <a href="https://www.charco.studio/"> Charco </a></p>
+            <h3>Sobre mí</h3>
+            <p class="textoFooter">Martina Galarza Aka Marte es diseñadora, artista, ilustradora argentina. Podes visitar la página de su branding studio <a href="https://www.charco.studio/"> Charco </a></p>
         </div>
       </div>
       <div class="col-md-4 col-lg-3">
         <div class="footer-links">
-          <a href="../index.html"><p class="menu-footer">Inicio</p></a>
-          <a href="portfolio.html"><p class="menu-footer">Portfolio</p></a>
-          <a href="disenio.html"><p class="menu-footer">Diseño</p></a>
-          <a href="sobremi.html"><p class="menu-footer">Sobre mí</p></a>
-          <a href="contacto.html"><p class="menu-footer">Contacto</p></a>
+          <a class="linkFooter" href="../index.html"><p class="menu-footer">Inicio</p></a>
+          <a class="linkFooter" href="portfolio.html"><p class="menu-footer">Portfolio</p></a>
+          <a class="linkFooter" href="disenio.html"><p class="menu-footer">Diseño</p></a>
+          <a class="linkFooter" href="sobremi.html"><p class="menu-footer">Sobre mí</p></a>
+          <a class="linkFooter" href="contacto.html"><p class="menu-footer">Contacto</p></a>
         </div>
       </div>
       <div class="col-md-4 col-lg2">
-        <h3>Follow</h3>
+        <h3 class="redes">Redes Sociales</h3>
           <div class="footer-social">
             <a href="https://www.instagram.com/marte_______/"><img class="logo-footer" src="../assets/icons/logoig.png" alt="logo Instagram"></a>
             <a href="https://www.facebook.com/martevisual.dg"><img class="logo-footer" src="../assets/icons/logofb.png" alt="logo facebook"></a>
             <a href="https://www.behance.net/martevisual"><img class="logo-footer" src="../assets/icons/logobe.png" alt="logo Behance"></a>
             <a href="#"> <img class="logo-footer" src="../assets/icons/logomail.png" alt="logo mail"></a>
           </div>
-          <div>
+          <div class="contenedorLogoAmarillo">
             <img class= "logo-mar-footer" src="../assets/img/logosinfondo.png" alt="Logo Marte">
           </div>
       </div>
       <div class="col-md-4 col-lg-2">
         <div class="footer-contact">
-            <h3>Or Get In Touch</h3>
-            <p>Say Hi: hola@martevisual.com</p>
+            <h3>También podes contactarme</h3>
+            <p class="textoFooter">Escribime: hola@martevisual.com</p>
         </div>
       </div>
-
     </footer>
-    <!--Footer
-    <footer class="pie">
-      <a href="https://www.instagram.com/marte_______/"><img class="pie__logo logo--tamanio" src="../assets/icons/logoig.png" alt="logo Instagram"></a>
-      <a href="https://www.facebook.com/martevisual.dg"><img class="pie__logo logo--tamanio" src="../assets/icons/logofb.png" alt="logo facebook"></a>
-      <a href="https://www.behance.net/martevisual"><img class="pie__logo logo--tamanio" src="../assets/icons/logobe.png" alt="logo Behance"></a>
-      <a href="#"> <img class="pie__logo logo--tamanio" src="../assets/icons/logomail.png" alt="logo mail"></a>
-    </footer>-->
+    
 </main>
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

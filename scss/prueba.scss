@@ -47,23 +47,10 @@ body{margin: 0; padding: 0;}
 .navigation ul li a {color:#333; display: block; padding: 1rem 1rem; transition: all 0.4s}
 .navigation ul li a::after {content: ""; display: block; margin: auto; height: 3px; width: 0; top: 5px; background: transparent; transition: all 0.9s;}
 li > a:hover::after, li > a.active-nav::after {width: 100%; background: $azulnegro;}
-/*main{padding-top: 6rem;}*/
 .banner{width: 100%;} /*aca me sigue quedando margen a los costados*/
 .carousel-control-next-icon{filter: invert(100%);}
 .carousel-control-prev-icon{filter: invert(100%);}
 .mainColor{background-color: $clarito;}
-footer{margin-top: 40px;}
-
-.pieIndex {
-    background-color: #f2f2bd; padding-top: 30px; padding-bottom: 10px;  display: flex; flex-direction: row; justify-content: space-around;
-    &__logo{
-        width: 45%;
-        transition: all 0.5s;
-    }
-    &__logo:hover {
-        transform: rotate(60deg);
-    }
-}
 /*Portfolio*/
 .contenedorAlbum{background-color: #f2f2bd;}
 /*Diseño*/
@@ -97,19 +84,18 @@ h2{color: $naranja; font-family: $subtitulos;font-size: 50px;}
 .navigation ul li {display: block;}
 .navigation ul li a {color:#333; display: block; padding: 0.5rem 1rem; transition: all 0.4s}
 
-/*footer {width: 340px;}*/
-.afooter {width: 70px;}
-.pie {
-    display: flex; flex-direction: row; justify-content: space-around; padding: 0 0 10px 30px;
-    &__logo{
-    width: 50%;
-    transition: all 0.5s;
-    margin-left: 5px;
-    }
-    &__logo:hover {
-    transform: rotate(60deg);
-    }
-}
+   /*Footer*/
+   .pie{padding: 10px 0; margin-top: 5px; background-color: $amarillo; flex-flow: flex wrap;}
+   .textoFooter{font-size: 20px; font-weight: 500;}
+   .footer-social{width: 110%; display:flex; flex-direction: row; padding-top: 5px;}
+   .footer-links{display: flex; flex-direction: column; padding-left: 7px;}
+   .contenedorLogoAmarillo{display: flex; justify-content: center;}
+   .logo-mar-footer{padding-top: 15px; width: 20%;}
+   .footer-about{margin: 5px 10px;}
+   .logo-footer{padding-top: 10px; padding-bottom: 10px; width: 45%; transition: all 0.5s;}
+   .logo-footer:hover {transform: rotate(60deg);}
+   .menu-footer{color:$azulnegro; font-size: 20px; font-weight: 600; line-height: 10px;}
+   
     /*Index Mobile*/
 div.carousel {margin: 5px 15px; width: 90%;}
 .textoIndex{flex-flow: row wrap; justify-content: center; margin-top: 30px;}
@@ -150,7 +136,7 @@ h3{text-align: center;}
 p{text-align: center;}
 
     /*Sobre Mi Mobile*/
-.carouselSobreMi{width: 95%;}
+.carousel-desktop{visibility: hidden;}
 img.logoSobre {width: 60%; margin-left: 70px; margin-top: 10px; margin-bottom: 10px;}
 div.sectorInfo {margin: 0; width: 100%;}
 .featurette-heading{font-size: 35px; padding-top: 10px; text-align: center;}
@@ -200,6 +186,7 @@ div.botonInfo{justify-content: center; margin-left: 15px;}
 .btn-info{font-size: 20px; color: blue; background-color: yellow; padding: 5px 20px}
     /*Footer*/
 .pie{padding: 30px 0; margin-top: 20px; background-color: $amarillo; display: flex;}
+.footer-contact{text-align: right; margin-right: 25px;}
 .footer-social{width: 90%; display:flex; flex-direction: row; padding-top: 10px;}
 .footer-links{display: flex; flex-direction: column; padding-left: 25px;}
 .logo-mar-footer{margin-left: 90px; padding-top: 18px; width: 27%;}
@@ -259,8 +246,9 @@ div.carousel{flex-flow: row wrap;}
 .servicios{justify-content: center;}
 
     /*Sobre mí Desktop*/
-.titulo-carousel-1{font-size: 30px; font-weight: 600; background-color: $naranja; margin-left: 200px; margin-right: 180px;}
-.texto-carousel-1{background-color: $amarillo; margin-left: 30px; margin-right: 30px;}
+.carousel-mobile{visibility: hidden;}
+.titulo-carousel2{margin-top: 50px; padding-top: 30px; margin-bottom: 0;}
+.escrito-carousel{margin-top: 90px;}
 img.logoSobre {width: 90%; transform: translate(60px, 60px);}
 div.sectorInfo {margin-left: 5%; margin-top: 5px;}
 .info {
