@@ -87,24 +87,27 @@ h2{color: $naranja; font-family: $subtitulos;font-size: 50px;}
    /*Footer*/
    .pie{padding: 10px 0; margin-top: 5px; background-color: $amarillo; flex-flow: flex wrap;}
    .textoFooter{font-size: 20px; font-weight: 500;}
-   .footer-social{width: 110%; display:flex; flex-direction: row; padding-top: 5px;}
+   .footer-social{width: 100%; display:flex; flex-direction: row; padding-top: 5px;}
    .footer-links{display: flex; flex-direction: column; padding-left: 7px;}
    .contenedorLogoAmarillo{display: flex; justify-content: center;}
    .logo-mar-footer{padding-top: 15px; width: 20%;}
    .footer-about{margin: 5px 10px;}
    .logo-footer{padding-top: 10px; padding-bottom: 10px; width: 45%; transition: all 0.5s;}
    .logo-footer:hover {transform: rotate(60deg);}
+   .a-social-link{text-align: center;}
    .menu-footer{color:$azulnegro; font-size: 20px; font-weight: 600; line-height: 10px;}
    .borde-mobile{padding-bottom: 10px; border-bottom: 6px solid $naranja;}
    
+
     /*Index Mobile*/
-div.carousel {margin: 5px 15px; width: 90%;}
+.carousel-mobile-index{padding-top: 20px; display: flex;justify-content: center;}
+div.carousel {width: 90%;}
 .textoIndex{flex-flow: row wrap; justify-content: center; margin-top: 30px;}
 .tituloIndex{padding-top: 15px; color: $amarillo; font-family: $titulos; font-size: 50px; font-weight: 1000; letter-spacing: 8px; text-decoration: underline; text-align: center;}
 .introIndex1{margin-left: 5px; padding: 15px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px; text-align: justify; border-bottom: solid blue 2px}
 .introIndex2{margin-left: 5px; padding-bottom: 2px; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px; text-align: justify;}
 .introIndex3{color: blue; font-family: 'Questrial Regular', sans-serif; font-size: 18px; padding-top: 10px; text-align: center;}
-.logoIndex{width: 50%; padding: 10px; margin-left: 65px;}
+.logoIndex{width: 50%; padding: 10px; margin-left: 90px;}
 div.botonInfo{justify-content: center; margin-left: 30px;}
 .btn-info{font-size: 20px; color: blue; background-color: yellow; padding: 5px 20px}
 .pieIndex {
@@ -140,6 +143,9 @@ p{text-align: center;}
 
     /*Sobre Mi Mobile*/
 .carousel-desktop{display: none;}
+.carousel-mobile{transform: translateX(20px)!important;}
+.titulo-carousel-mobile{font-size: 10px;}
+.texto-carousel-mobile{font-size: 8px;}
 img.logoSobre {width: 60%; margin-left: 70px; margin-top: 10px; margin-bottom: 10px;}
 div.sectorInfo {margin: 0; width: 100%;}
 .featurette-heading{font-size: 35px; padding-top: 10px; text-align: center;}
@@ -174,19 +180,13 @@ h4{color: $amarillo; font-family: $subtitulos; font-size: $h4; text-align: cente
 div.formulario{display: flex; justify-content: center; margin-bottom: 20px; padding-bottom: 15px; padding-left: 45px; background-color: $gris; width: 90%; margin: 7px; margin-left: 20px; border-radius: 5px; box-shadow: 2px 5px 12px $azulnegro;}
 form{width: 215px;}
 .colorBoton {background-image: linear-gradient(to right, $naranja, $amarillo)};
+.containerContacto{padding-bottom: 25px;}
 }/*Cierre Vista Mobile*/
 
  /*Vista Desktop------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1024px){
     /*General*/
-.textoIndex{flex-flow: row wrap; margin-top: 30px;}
-.tituloIndex{margin-left: 15px; padding-top: 15px; color: $amarillo; font-family: $titulos; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: left;}
-.introIndex1{line-height: 1em; margin-left: 15px; padding: 20px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 25px; text-align: left; border-bottom: solid blue 2px}
-.introIndex2{line-height: 1em; margin-left: 20px; padding: 10px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 25px; text-align: justify;}
 h2{color: $naranja; font-family: $subtitulos;font-size: $h2; font-weight: 800;}
-.logoIndex{width: 40%; padding-top: 10px; padding-left: 30px;}
-div.botonInfo{justify-content: center; margin-left: 15px;}
-.btn-info{font-size: 20px; color: blue; background-color: yellow; padding: 5px 20px}
     /*Footer*/
 .pie{padding: 40px 0 30px 0; background-color: $amarillo; display: flex;}
 .footer-contact{text-align: right; margin-right: 25px;}
@@ -199,9 +199,15 @@ div.botonInfo{justify-content: center; margin-left: 15px;}
 .menu-footer{color:$azulnegro; font-size: 20px;}
 
     /*Index Desktop*/
+.textoIndex{flex-flow: row wrap; margin-top: 30px;}
+.tituloIndex{margin-left: 15px; padding-top: 15px; color: $amarillo; font-family: $titulos; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: left;}
+.introIndex1{line-height: 1em; margin-left: 15px; padding: 20px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 25px; text-align: left; border-bottom: solid blue 2px}
+.introIndex2{line-height: 1em; margin-left: 20px; padding: 10px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 25px; text-align: justify;}
+.logoIndex{width: 40%; padding-top: 10px; padding-left: 30px;}
+div.botonInfo{justify-content: center; margin-left: 15px;}
+.btn-info{font-size: 20px; color: blue; background-color: yellow; padding: 5px 20px}
 .divCarousel{display: flex;}
-div.carousel{flex-flow: row wrap; margin: 20px 0 20px 20px;}
-.bienvenida {margin-top: 4%; color: $azulclaro; font-weight: 1000; font-size: 70px; letter-spacing: 2px; font-family: $subtitulos;}
+div.carouselIndex{flex-flow: row wrap; margin: 20px 0 20px 20px;}
 
     /*Portfolio Desktop*/
 .contenedorAlbum{background-color: $clarito!important;}
@@ -227,7 +233,7 @@ div.carousel{flex-flow: row wrap; margin: 20px 0 20px 20px;}
         font-weight: 400;
     }
     /*Diseño Desktop*/
-.divServicio{margin-left: 50px; justify-content: center;} 
+.divServicio{margin-left: 50px;} 
 .tituloDi{margin-top: 30px; color: $amarillo; font-family: $titulos; font-size: 40px; font-weight: 800;}
 .introDi{color: $azulmedio; font-family: $texto-comun; font-size: 25px; padding-top: 20px; padding-bottom: 20px;}
 .btn-contactarme{font-size: 20px; color: blue; background-color: yellow;}
@@ -250,7 +256,7 @@ div.carousel{flex-flow: row wrap; margin: 20px 0 20px 20px;}
 .servicios{justify-content: center;}
 
     /*Sobre mí Desktop*/
-.mainSobre{margin-left: 0;}
+
 .carousel-mobile{display: none;}
 .titulo-carousel2{margin-top: 50px; padding-top: 30px; margin-bottom: 0;}
 .escrito-carousel{margin-top: 90px;}

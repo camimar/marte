@@ -185,7 +185,7 @@ div.carouselSobreMi {
     font-size: 20px;
     font-weight: 500; }
   .footer-social {
-    width: 110%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     padding-top: 5px; }
@@ -208,6 +208,8 @@ div.carouselSobreMi {
     transition: all 0.5s; }
   .logo-footer:hover {
     transform: rotate(60deg); }
+  .a-social-link {
+    text-align: center; }
   .menu-footer {
     color: #000d1a;
     font-size: 20px;
@@ -217,8 +219,11 @@ div.carouselSobreMi {
     padding-bottom: 10px;
     border-bottom: 6px solid #ff9900; }
   /*Index Mobile*/
+  .carousel-mobile-index {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center; }
   div.carousel {
-    margin: 5px 15px;
     width: 90%; }
   .textoIndex {
     flex-flow: row wrap;
@@ -257,7 +262,7 @@ div.carouselSobreMi {
   .logoIndex {
     width: 50%;
     padding: 10px;
-    margin-left: 65px; }
+    margin-left: 90px; }
   div.botonInfo {
     justify-content: center;
     margin-left: 30px; }
@@ -344,6 +349,12 @@ div.carouselSobreMi {
   /*Sobre Mi Mobile*/
   .carousel-desktop {
     display: none; }
+  .carousel-mobile {
+    transform: translateX(20px) !important; }
+  .titulo-carousel-mobile {
+    font-size: 10px; }
+  .texto-carousel-mobile {
+    font-size: 8px; }
   img.logoSobre {
     width: 60%;
     margin-left: 70px;
@@ -416,58 +427,19 @@ div.carouselSobreMi {
   form {
     width: 215px; }
   .colorBoton {
-    background-image: linear-gradient(to right, #ff9900, #ffd11a); } }
+    background-image: linear-gradient(to right, #ff9900, #ffd11a); }
+  .containerContacto {
+    padding-bottom: 25px; } }
 
 /*Cierre Vista Mobile*/
 /*Vista Desktop------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1024px) {
   /*General*/
-  .textoIndex {
-    flex-flow: row wrap;
-    margin-top: 30px; }
-  .tituloIndex {
-    margin-left: 15px;
-    padding-top: 15px;
-    color: #ffd11a;
-    font-family: "Barlow Condensed", fantasy;
-    font-size: 50px;
-    letter-spacing: 8px;
-    text-decoration: underline;
-    text-align: left; }
-  .introIndex1 {
-    line-height: 1em;
-    margin-left: 15px;
-    padding: 20px 0;
-    color: #1d6262;
-    font-family: 'Questrial Regular', sans-serif;
-    font-size: 25px;
-    text-align: left;
-    border-bottom: solid blue 2px; }
-  .introIndex2 {
-    line-height: 1em;
-    margin-left: 20px;
-    padding: 10px 0;
-    color: #1d6262;
-    font-family: 'Questrial Regular', sans-serif;
-    font-size: 25px;
-    text-align: justify; }
   h2 {
     color: #ff9900;
     font-family: "Barlow Condensed", fantasy;
     font-size: 5vw;
     font-weight: 800; }
-  .logoIndex {
-    width: 40%;
-    padding-top: 10px;
-    padding-left: 30px; }
-  div.botonInfo {
-    justify-content: center;
-    margin-left: 15px; }
-  .btn-info {
-    font-size: 20px;
-    color: blue;
-    background-color: yellow;
-    padding: 5px 20px; }
   /*Footer*/
   .pie {
     padding: 40px 0 30px 0;
@@ -500,18 +472,52 @@ div.carouselSobreMi {
     color: #000d1a;
     font-size: 20px; }
   /*Index Desktop*/
+  .textoIndex {
+    flex-flow: row wrap;
+    margin-top: 30px; }
+  .tituloIndex {
+    margin-left: 15px;
+    padding-top: 15px;
+    color: #ffd11a;
+    font-family: "Barlow Condensed", fantasy;
+    font-size: 50px;
+    letter-spacing: 8px;
+    text-decoration: underline;
+    text-align: left; }
+  .introIndex1 {
+    line-height: 1em;
+    margin-left: 15px;
+    padding: 20px 0;
+    color: #1d6262;
+    font-family: 'Questrial Regular', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    border-bottom: solid blue 2px; }
+  .introIndex2 {
+    line-height: 1em;
+    margin-left: 20px;
+    padding: 10px 0;
+    color: #1d6262;
+    font-family: 'Questrial Regular', sans-serif;
+    font-size: 25px;
+    text-align: justify; }
+  .logoIndex {
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 30px; }
+  div.botonInfo {
+    justify-content: center;
+    margin-left: 15px; }
+  .btn-info {
+    font-size: 20px;
+    color: blue;
+    background-color: yellow;
+    padding: 5px 20px; }
   .divCarousel {
     display: flex; }
-  div.carousel {
+  div.carouselIndex {
     flex-flow: row wrap;
     margin: 20px 0 20px 20px; }
-  .bienvenida {
-    margin-top: 4%;
-    color: #247878;
-    font-weight: 1000;
-    font-size: 70px;
-    letter-spacing: 2px;
-    font-family: "Barlow Condensed", fantasy; }
   /*Portfolio Desktop*/
   .contenedorAlbum {
     background-color: #f2f2bd !important; }
@@ -541,8 +547,7 @@ div.carouselSobreMi {
     font-weight: 400; }
   /*Diseño Desktop*/
   .divServicio {
-    margin-left: 50px;
-    justify-content: center; }
+    margin-left: 50px; }
   .tituloDi {
     margin-top: 30px;
     color: #ffd11a;
@@ -644,8 +649,6 @@ div.carouselSobreMi {
   .servicios {
     justify-content: center; }
   /*Sobre mí Desktop*/
-  .mainSobre {
-    margin-left: 0; }
   .carousel-mobile {
     display: none; }
   .titulo-carousel2 {
