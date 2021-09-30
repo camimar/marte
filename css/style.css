@@ -2,6 +2,14 @@
 /*variables para condicionales*/
 /*variables tamaños logos*/
 /*variables sobre fuentes*/
+@font-face {
+  font-family: 'Impact';
+  src: url("assets/fonts/impact.ttf"); }
+
+@font-face {
+  font-family: 'Questrial';
+  src: url("assets/fonts/Questrial-Regular.ttf"); }
+
 /*Código especifico para corregir margenes de Bootstrap*/
 .container-fluid {
   padding-right: 15px;
@@ -136,14 +144,14 @@ div.carouselSobreMi {
     padding: 0; }
   h1 {
     color: #ffd11a;
-    font-family: "Barlow Condensed", fantasy !important;
+    font-family: "Impact" !important;
     font-size: 300%;
     letter-spacing: 2px;
     padding-left: 3%;
     padding-top: 4%; }
   h2 {
     color: #ff9900;
-    font-family: "Barlow Condensed", fantasy;
+    font-family: "Impact";
     font-size: 50px; }
   .logoNav {
     width: 60px;
@@ -232,7 +240,7 @@ div.carouselSobreMi {
   .tituloIndex {
     padding-top: 15px;
     color: #ffd11a;
-    font-family: "Barlow Condensed", fantasy;
+    font-family: "Impact";
     font-size: 50px;
     font-weight: 1000;
     letter-spacing: 8px;
@@ -295,7 +303,7 @@ div.carouselSobreMi {
     background-image: linear-gradient(to top, #c5c8d0, #f2f2bd); }
     .submenu__titulo {
       color: #ff9900;
-      font-family: "Barlow Condensed", fantasy;
+      font-family: "Impact";
       font-weight: 1000;
       font-size: 40px; }
     .submenu__texto {
@@ -329,7 +337,7 @@ div.carouselSobreMi {
   .tituloDi {
     margin-top: 30px;
     color: #ffd11a;
-    font-family: "Barlow Condensed", fantasy;
+    font-family: "Impact";
     font-size: 30px;
     font-weight: 800; }
   .introDi {
@@ -407,7 +415,7 @@ div.carouselSobreMi {
     font-weight: 300; }
   h4 {
     color: #ffd11a;
-    font-family: "Barlow Condensed", fantasy;
+    font-family: "Impact";
     font-size: 2.5vw;
     text-align: center;
     padding-left: 10px;
@@ -437,7 +445,7 @@ div.carouselSobreMi {
   /*General*/
   h2 {
     color: #ff9900;
-    font-family: "Barlow Condensed", fantasy;
+    font-family: "Impact";
     font-size: 5vw;
     font-weight: 800; }
   /*Footer*/
@@ -479,7 +487,7 @@ div.carouselSobreMi {
     margin-left: 15px;
     padding-top: 15px;
     color: #ffd11a;
-    font-family: "Barlow Condensed", fantasy;
+    font-family: "Impact";
     font-size: 50px;
     letter-spacing: 8px;
     text-decoration: underline;
@@ -529,7 +537,7 @@ div.carouselSobreMi {
     background-color: #f2f2bd; }
     .submenu__titulo {
       color: #ff9900;
-      font-family: "Barlow Condensed", fantasy;
+      font-family: "Impact";
       font-size: 3vw; }
     .submenu__texto {
       font-family: "Questrial Regular", sans-serif;
@@ -551,7 +559,7 @@ div.carouselSobreMi {
   .tituloDi {
     margin-top: 30px;
     color: #ffd11a;
-    font-family: "Barlow Condensed", fantasy;
+    font-family: "Impact";
     font-size: 40px;
     font-weight: 800; }
   .introDi {

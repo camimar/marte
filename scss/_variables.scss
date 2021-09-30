@@ -6,6 +6,8 @@ $widthLogo: 15%;
 $widthLogoGrande: 25%;
 
 /*variables sobre fuentes*/
-$titulos: 'Barlow Condensed', fantasy;  
+@font-face {font-family: 'Impact'; src: url('assets/fonts/impact.ttf');}
+@font-face {font-family: 'Questrial'; src: url('assets/fonts/Questrial-Regular.ttf');}
+$titulos: 'Impact';  
 $texto-comun: 'Questrial Regular', sans-serif; 
-$subtitulos: 'Barlow Condensed', fantasy;  
+$subtitulos: 'Impact';  
