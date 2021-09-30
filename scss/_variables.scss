@@ -1,13 +1,3 @@
-/* variables colores: se inicializan con el valor que seria el hexa del color (NO LAS USO AHORA POR LOS MAPS)
-$amarillo: #ffd11a;
-$naranja: #ff9900;
-$azulnegro: #000d1a;
-$azulclaro: #247878;
-$azulmedio: #1d6262;
-$gris: #c5c8d0;*/
-
-$vista: desktop;
-
 /*variables para condicionales*/
 $color: azul;
 
@@ -16,7 +6,6 @@ $widthLogo: 15%;
 $widthLogoGrande: 25%;
 
 /*variables sobre fuentes*/
-$titulos: 'Questrial Regular', sans-serif;
-$tituloImpact: 'Barlow Condensed', fantasy; 
+$titulos: 'Barlow Condensed', fantasy;  
 $texto-comun: 'Questrial Regular', sans-serif; 
-$subtitulos: 'Questrial Regular', sans-serif; 
+$subtitulos: 'Barlow Condensed', fantasy;  

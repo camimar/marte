@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/* variables colores: se inicializan con el valor que seria el hexa del color (NO LAS USO AHORA POR LOS MAPS)
-$amarillo: #ffd11a;
-$naranja: #ff9900;
-$azulnegro: #000d1a;
-$azulclaro: #247878;
-$azulmedio: #1d6262;
-$gris: #c5c8d0;*/
 /*variables para condicionales*/
 /*variables tamaños logos*/
 /*variables sobre fuentes*/
@@ -107,9 +100,6 @@ li > a:hover::after, li > a.active-nav::after {
   background-color: #f2f2bd; }
 
 /*Portfolio*/
-.contenedorAlbum {
-  background-color: #f2f2bd; }
-
 /*Diseño*/
 .tarjetas {
   border: 2px solid; }
@@ -146,18 +136,18 @@ div.carouselSobreMi {
     padding: 0; }
   h1 {
     color: #ffd11a;
-    font-family: "Questrial Regular", sans-serif !important;
+    font-family: "Barlow Condensed", fantasy !important;
     font-size: 300%;
     letter-spacing: 2px;
     padding-left: 3%;
     padding-top: 4%; }
   h2 {
     color: #ff9900;
-    font-family: "Questrial Regular", sans-serif;
+    font-family: "Barlow Condensed", fantasy;
     font-size: 50px; }
   .logoNav {
-    width: 15%;
-    height: 15%;
+    width: 60px;
+    height: 60px;
     margin-left: 10px;
     margin-top: 10px; }
   /*navBar fixed*/
@@ -223,6 +213,9 @@ div.carouselSobreMi {
     font-size: 20px;
     font-weight: 600;
     line-height: 10px; }
+  .borde-mobile {
+    padding-bottom: 10px;
+    border-bottom: 6px solid #ff9900; }
   /*Index Mobile*/
   div.carousel {
     margin: 5px 15px;
@@ -234,8 +227,9 @@ div.carouselSobreMi {
   .tituloIndex {
     padding-top: 15px;
     color: #ffd11a;
-    font-family: "Barlow Condensed", fantasy !important;
+    font-family: "Barlow Condensed", fantasy;
     font-size: 50px;
+    font-weight: 1000;
     letter-spacing: 8px;
     text-decoration: underline;
     text-align: center; }
@@ -286,6 +280,8 @@ div.carouselSobreMi {
     .pieIndex__logo:hover {
       transform: rotate(60deg); }
   /*Portfolio Mobile*/
+  .contenedorAlbum {
+    background-color: #f2f2bd !important; }
   img.logoPort {
     width: 20%;
     height: 20%;
@@ -295,7 +291,7 @@ div.carouselSobreMi {
     .submenu__titulo {
       color: #ff9900;
       font-family: "Barlow Condensed", fantasy;
-      font-weight: 400;
+      font-weight: 1000;
       font-size: 40px; }
     .submenu__texto {
       font-family: "Questrial Regular", sans-serif;
@@ -304,15 +300,19 @@ div.carouselSobreMi {
   .imgcharco {
     width: 100%; }
   .contenedorAlbum {
-    background-color: #f2f2bd; }
+    background-color: #f2f2bd;
+    margin-bottom: 0 !important;
+    padding: 0 !important; }
+  .sector-footer-port {
+    line-height: 25px; }
   /*Diseño Mobile*/
   .contenedorServicio {
     justify-content: center;
     width: 300px;
     margin-left: 40px;
     margin-top: 15px;
-    border: solid 2px blue;
-    background-image: linear-gradient(to top, white, #c5c8d0); }
+    border: groove 9px #247878;
+    background-image: linear-gradient(to bottom, #f2f2bd, #c5c8d0); }
   .disenio {
     width: 270px;
     justify-content: center;
@@ -321,7 +321,6 @@ div.carouselSobreMi {
   .divServicio {
     margin-left: 60px;
     justify-content: center; }
-  /*arreglar centrar*/
   .tituloDi {
     margin-top: 30px;
     color: #ffd11a;
@@ -331,7 +330,7 @@ div.carouselSobreMi {
   .introDi {
     padding: 20px 0;
     color: #1d6262;
-    font-family: 'Questrial Regular', sans-serif;
+    font-family: "Questrial Regular", sans-serif;
     font-size: 20px; }
   .btn-contactarme {
     margin-left: 40px;
@@ -344,7 +343,7 @@ div.carouselSobreMi {
     text-align: center; }
   /*Sobre Mi Mobile*/
   .carousel-desktop {
-    visibility: hidden; }
+    display: none; }
   img.logoSobre {
     width: 60%;
     margin-left: 70px;
@@ -397,7 +396,7 @@ div.carouselSobreMi {
     font-weight: 300; }
   h4 {
     color: #ffd11a;
-    font-family: "Questrial Regular", sans-serif;
+    font-family: "Barlow Condensed", fantasy;
     font-size: 2.5vw;
     text-align: center;
     padding-left: 10px;
@@ -405,6 +404,7 @@ div.carouselSobreMi {
   div.formulario {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
     padding-bottom: 15px;
     padding-left: 45px;
     background-color: #c5c8d0;
@@ -453,8 +453,9 @@ div.carouselSobreMi {
     text-align: justify; }
   h2 {
     color: #ff9900;
-    font-family: "Questrial Regular", sans-serif;
-    font-size: 5vw; }
+    font-family: "Barlow Condensed", fantasy;
+    font-size: 5vw;
+    font-weight: 800; }
   .logoIndex {
     width: 40%;
     padding-top: 10px;
@@ -469,8 +470,7 @@ div.carouselSobreMi {
     padding: 5px 20px; }
   /*Footer*/
   .pie {
-    padding: 30px 0;
-    margin-top: 20px;
+    padding: 40px 0 30px 0;
     background-color: #ffd11a;
     display: flex; }
   .footer-contact {
@@ -503,15 +503,18 @@ div.carouselSobreMi {
   .divCarousel {
     display: flex; }
   div.carousel {
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    margin: 20px 0 20px 20px; }
   .bienvenida {
     margin-top: 4%;
     color: #247878;
     font-weight: 1000;
     font-size: 70px;
     letter-spacing: 2px;
-    font-family: "Questrial Regular", sans-serif; }
+    font-family: "Barlow Condensed", fantasy; }
   /*Portfolio Desktop*/
+  .contenedorAlbum {
+    background-color: #f2f2bd !important; }
   .logoPort {
     width: 25%;
     padding: 2px;
@@ -548,8 +551,8 @@ div.carouselSobreMi {
     font-weight: 800; }
   .introDi {
     color: #1d6262;
-    font-family: 'Questrial Regular', sans-serif;
-    font-size: 30px;
+    font-family: "Questrial Regular", sans-serif;
+    font-size: 25px;
     padding-top: 20px;
     padding-bottom: 20px; }
   .btn-contactarme {
@@ -641,8 +644,10 @@ div.carouselSobreMi {
   .servicios {
     justify-content: center; }
   /*Sobre mí Desktop*/
+  .mainSobre {
+    margin-left: 0; }
   .carousel-mobile {
-    visibility: hidden; }
+    display: none; }
   .titulo-carousel2 {
     margin-top: 50px;
     padding-top: 30px;
@@ -669,12 +674,6 @@ div.carouselSobreMi {
       font-family: "Questrial Regular", sans-serif;
       font-weight: 400; }
   /*Contacto Desktop*/
-  .tituloContacto {
-    color: #ffd11a;
-    font-family: "Questrial Regular", sans-serif !important;
-    font-size: 80px;
-    letter-spacing: 1rem;
-    padding-top: 2%; }
   .compuHola {
     width: 200%;
     margin-left: 60px; }
