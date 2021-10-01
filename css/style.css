@@ -301,7 +301,7 @@ div.carouselSobreMi {
     background-image: linear-gradient(to top, #c5c8d0, #f2f2bd); }
     .submenu__titulo {
       color: #ff9900;
-      font-family: "Impact";
+      font-family: 'Impact';
       font-weight: 1000;
       font-size: 40px; }
     .submenu__texto {
@@ -335,7 +335,7 @@ div.carouselSobreMi {
     margin-top: 20px;
     text-align: center;
     color: #ffd11a;
-    font-family: "Impact";
+    font-family: 'Impact';
     font-size: 30px;
     font-weight: 800; }
   .introDi {
@@ -414,7 +414,7 @@ div.carouselSobreMi {
     font-weight: 300; }
   h4 {
     color: #ffd11a;
-    font-family: "Impact";
+    font-family: 'Impact';
     font-size: 2.5vw;
     text-align: center;
     padding-left: 10px;
@@ -444,7 +444,7 @@ div.carouselSobreMi {
   /*General*/
   h2 {
     color: #ff9900;
-    font-family: "Impact";
+    font-family: 'Impact';
     font-size: 5vw;
     font-weight: 800; }
   /*Footer*/
@@ -486,7 +486,7 @@ div.carouselSobreMi {
     margin-left: 15px;
     padding-top: 15px;
     color: #ffd11a;
-    font-family: "Impact";
+    font-family: 'Impact';
     font-size: 50px;
     letter-spacing: 8px;
     text-decoration: underline;
@@ -536,7 +536,7 @@ div.carouselSobreMi {
     background-color: #f2f2bd; }
     .submenu__titulo {
       color: #ff9900;
-      font-family: "Impact";
+      font-family: 'Impact';
       font-size: 3vw; }
     .submenu__texto {
       font-family: "Questrial Regular", sans-serif;
