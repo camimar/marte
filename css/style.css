@@ -2,14 +2,12 @@
 /*variables para condicionales*/
 /*variables tamaños logos*/
 /*variables sobre fuentes*/
+/*Fuentes descargadas*/
 @font-face {
   font-family: 'Impact';
   src: url("assets/fonts/impact.ttf"); }
 
-@font-face {
-  font-family: 'Questrial';
-  src: url("assets/fonts/Questrial-Regular.ttf"); }
-
+/*@font-face {font-family: 'Questrial'; src: url('assets/fonts/Questrial-Regular.ttf');}*/
 /*Código especifico para corregir margenes de Bootstrap*/
 .container-fluid {
   padding-right: 15px;
@@ -332,21 +330,22 @@ div.carouselSobreMi {
     padding-left: 15px;
     padding-top: 7px; }
   .divServicio {
-    margin-left: 60px;
     justify-content: center; }
   .tituloDi {
-    margin-top: 30px;
+    margin-top: 20px;
+    text-align: center;
     color: #ffd11a;
     font-family: "Impact";
     font-size: 30px;
     font-weight: 800; }
   .introDi {
-    padding: 20px 0;
+    text-align: justify;
+    padding: 20px 5px;
     color: #1d6262;
     font-family: "Questrial Regular", sans-serif;
     font-size: 20px; }
   .btn-contactarme {
-    margin-left: 40px;
+    margin-left: 100px;
     font-size: 20px;
     color: blue;
     background-color: yellow; }
