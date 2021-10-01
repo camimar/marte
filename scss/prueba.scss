@@ -1,4 +1,9 @@
 @import "variables";
+@font-face {font-family: 'Impact'; src: url('assets/fonts/impact.ttf');}
+@font-face {font-family: 'Questrial'; src: url('assets/fonts/Questrial-Regular.ttf');}
+$titulos: 'Impact';  
+$texto-comun: 'Questrial Regular', sans-serif; 
+$subtitulos: 'Impact'; 
 /*Código especifico para corregir margenes de Bootstrap*/
 .container-fluid {padding-right: 15px; padding-left: 15px;  margin-right: auto; margin-left: auto; background-color: #f2f2bd;}
 .row {margin-right: -15px; margin-left: -15px;}
