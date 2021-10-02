@@ -153,7 +153,7 @@ div.carouselSobreMi {
     font-size: 50px; }
   .logoNav {
     width: 60px;
-    height: 60px;
+    height: 50px;
     margin-left: 10px;
     margin-top: 10px; }
   /*navBar fixed*/
@@ -238,7 +238,7 @@ div.carouselSobreMi {
   .tituloIndex {
     padding-top: 15px;
     color: #ffd11a;
-    font-family: "Impact";
+    font-family: 'Impact';
     font-size: 50px;
     font-weight: 1000;
     letter-spacing: 8px;
@@ -558,7 +558,7 @@ div.carouselSobreMi {
   .tituloDi {
     margin-top: 30px;
     color: #ffd11a;
-    font-family: "Impact";
+    font-family: 'Impact';
     font-size: 40px;
     font-weight: 800; }
   .introDi {

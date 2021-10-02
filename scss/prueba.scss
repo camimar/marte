@@ -79,7 +79,7 @@ div.carouselSobreMi{border-bottom: solid 15px $amarillo;}
 * {margin: 0; padding: 0;}
 h1{color: $amarillo; font-family: 'Impact'!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
 h2{color: $naranja; font-family: 'Impact';font-size: 50px;}
-.logoNav{width: 60px; height: 60px; margin-left: 10px; margin-top: 10px;}
+.logoNav{width: 60px; height: 50px; margin-left: 10px; margin-top: 10px;}
 
     /*navBar fixed*/   
 .navigation {width: 100%; margin-top: 1rem;}
@@ -109,7 +109,7 @@ h2{color: $naranja; font-family: 'Impact';font-size: 50px;}
 .carousel-mobile-index{padding-top: 20px; display: flex;justify-content: center;}
 div.carousel {width: 90%;}
 .textoIndex{flex-flow: row wrap; justify-content: center; margin-top: 30px;}
-.tituloIndex{padding-top: 15px; color: $amarillo; font-family: $titulos; font-size: 50px; font-weight: 1000; letter-spacing: 8px; text-decoration: underline; text-align: center;}
+.tituloIndex{padding-top: 15px; color: $amarillo; font-family: 'Impact'; font-size: 50px; font-weight: 1000; letter-spacing: 8px; text-decoration: underline; text-align: center;}
 .introIndex1{margin-left: 5px; padding: 15px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px; text-align: justify; border-bottom: solid blue 2px}
 .introIndex2{margin-left: 5px; padding-bottom: 2px; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px; text-align: justify;}
 .introIndex3{color: blue; font-family: 'Questrial Regular', sans-serif; font-size: 18px; padding-top: 10px; text-align: center;}
@@ -240,7 +240,7 @@ div.carouselIndex{flex-flow: row wrap; margin: 20px 0 20px 20px;}
     }
     /*Diseño Desktop*/
 .divServicio{margin-left: 50px;} 
-.tituloDi{margin-top: 30px; color: $amarillo; font-family: $titulos; font-size: 40px; font-weight: 800;}
+.tituloDi{margin-top: 30px; color: $amarillo; font-family: 'Impact'; font-size: 40px; font-weight: 800;}
 .introDi{color: $azulmedio; font-family: $texto-comun; font-size: 25px; padding-top: 20px; padding-bottom: 20px;}
 .btn-contactarme{font-size: 20px; color: blue; background-color: yellow;}
 .bordeBajo{justify-content: center; border-bottom: solid $naranja 2px; padding-bottom: 20px; margin-bottom: 20px;}
