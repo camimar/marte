@@ -2,9 +2,8 @@
 /*Fuentes descargadas*/
 @font-face {font-family: 'Impact'; src: url('assets/fonts/impact.ttf');}
 /*@font-face {font-family: 'Questrial'; src: url('assets/fonts/Questrial-Regular.ttf');}*/
-$titulos: 'Impact';  
 /*$texto-comun: 'Questrial Regular', sans-serif; */
-$subtitulos: 'Impact'; 
+
 /*Código especifico para corregir margenes de Bootstrap*/
 .container-fluid {padding-right: 15px; padding-left: 15px;  margin-right: auto; margin-left: auto; background-color: #f2f2bd;}
 .row {margin-right: -15px; margin-left: -15px;}
@@ -78,7 +77,7 @@ div.carouselSobreMi{border-bottom: solid 15px $amarillo;}
     /*General*/
 * {margin: 0; padding: 0;}
 h1{color: $amarillo; font-family: 'Impact'!important; font-size: 300%; letter-spacing: 2px; padding-left: 3%; padding-top: 4%;}
-h2{color: $naranja; font-family: 'Impact';font-size: 50px;}
+h2{color: $naranja; font-family: 'Impact'!important; font-size: 50px;}
 .logoNav{width: 60px; height: 50px; margin-left: 10px; margin-top: 10px;}
 
     /*navBar fixed*/   
@@ -131,7 +130,7 @@ img.logoPort{width: 20%; height: 20%; padding-top: 5px;}
 .submenu {
     background-image: linear-gradient(to top, $gris, $clarito);
     &__titulo {color: $naranja; font-family: 'Impact'; font-weight: 1000; font-size: 40px;}
-    &__texto {/*font-family: $texto-comun*/; color:$azulmedio!important; font-weight: 600;}
+    &__texto {/*font-family: $texto-comun*/ color:$azulmedio!important; font-weight: 600;}
 }
 .imgcharco {width: 100%;}
 .contenedorAlbum{background-color: $clarito; margin-bottom: 0!important; padding: 0!important;}

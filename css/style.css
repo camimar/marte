@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*variables para condicionales*/
 /*variables tamaños logos*/
-/*variables sobre fuentes*/
 /*Fuentes descargadas*/
 @font-face {
   font-family: 'Impact';
@@ -149,7 +148,7 @@ div.carouselSobreMi {
     padding-top: 4%; }
   h2 {
     color: #ff9900;
-    font-family: 'Impact';
+    font-family: "Impact" !important;
     font-size: 50px; }
   .logoNav {
     width: 60px;
