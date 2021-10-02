@@ -3,7 +3,7 @@
 @font-face {font-family: 'Impact'; src: url('assets/fonts/impact.ttf');}
 /*@font-face {font-family: 'Questrial'; src: url('assets/fonts/Questrial-Regular.ttf');}*/
 $titulos: 'Impact';  
-$texto-comun: 'Questrial Regular', sans-serif; 
+/*$texto-comun: 'Questrial Regular', sans-serif; */
 $subtitulos: 'Impact'; 
 /*Código especifico para corregir margenes de Bootstrap*/
 .container-fluid {padding-right: 15px; padding-left: 15px;  margin-right: auto; margin-left: auto; background-color: #f2f2bd;}
@@ -40,7 +40,7 @@ $clarito: map-get($map: $colores, $key: clarito);
 
 /*Generales - independientes de las vistas*/
 h3{color: $naranja; font-weight: 600;}
-p.textoComun {font-family: $texto-comun; color: $azulnegro!important;}
+p.textoComun {/*font-family: $texto-comun;*/ color: $azulnegro!important;}
 body{margin: 0; padding: 0;}
 
 /*Prueba de NavBar Fixed*/
@@ -53,7 +53,7 @@ body{margin: 0; padding: 0;}
 .navigation ul li a {color:#333; display: block; padding: 1rem 1rem; transition: all 0.4s}
 .navigation ul li a::after {content: ""; display: block; margin: auto; height: 3px; width: 0; top: 5px; background: transparent; transition: all 0.9s;}
 li > a:hover::after, li > a.active-nav::after {width: 100%; background: $azulnegro;}
-.banner{width: 100%;} /*aca me sigue quedando margen a los costados*/
+.banner{width: 100%;}
 .carousel-control-next-icon{filter: invert(100%);}
 .carousel-control-prev-icon{filter: invert(100%);}
 .mainColor{background-color: $clarito;}
@@ -63,7 +63,7 @@ li > a:hover::after, li > a.active-nav::after {width: 100%; background: $azulneg
 .tarjetas {
     border: 2px solid;
     &__titulo {color: $naranja; font-weight: 600;}
-    &__texto {font-weight: 400; font-family: $texto-comun;}
+    &__texto {font-weight: 400; /*font-family: $texto-comun*/;}
 }
 .fondoTarjetas {background-image: linear-gradient(to bottom, $gris, $azulclaro);}
 
@@ -110,9 +110,9 @@ h2{color: $naranja; font-family: 'Impact';font-size: 50px;}
 div.carousel {width: 90%;}
 .textoIndex{flex-flow: row wrap; justify-content: center; margin-top: 30px;}
 .tituloIndex{padding-top: 15px; color: $amarillo; font-family: 'Impact'; font-size: 50px; font-weight: 1000; letter-spacing: 8px; text-decoration: underline; text-align: center;}
-.introIndex1{margin-left: 5px; padding: 15px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px; text-align: justify; border-bottom: solid blue 2px}
-.introIndex2{margin-left: 5px; padding-bottom: 2px; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 20px; text-align: justify;}
-.introIndex3{color: blue; font-family: 'Questrial Regular', sans-serif; font-size: 18px; padding-top: 10px; text-align: center;}
+.introIndex1{margin-left: 5px; padding: 15px 0; color: $azulmedio; /*font-family: 'Questrial Regular', sans-serif*/; font-size: 20px; text-align: justify; border-bottom: solid blue 2px}
+.introIndex2{margin-left: 5px; padding-bottom: 2px; color: $azulmedio;/* font-family: 'Questrial Regular', sans-serif*/; font-size: 20px; text-align: justify;}
+.introIndex3{color: blue; /*font-family: 'Questrial Regular', sans-serif*/; font-size: 18px; padding-top: 10px; text-align: center;}
 .logoIndex{width: 50%; padding: 10px; margin-left: 90px;}
 div.botonInfo{justify-content: center; margin-left: 30px;}
 .btn-info{font-size: 20px; color: blue; background-color: yellow; padding: 5px 20px}
@@ -131,7 +131,7 @@ img.logoPort{width: 20%; height: 20%; padding-top: 5px;}
 .submenu {
     background-image: linear-gradient(to top, $gris, $clarito);
     &__titulo {color: $naranja; font-family: 'Impact'; font-weight: 1000; font-size: 40px;}
-    &__texto {font-family: $texto-comun; color:$azulmedio!important; font-weight: 600;}
+    &__texto {/*font-family: $texto-comun*/; color:$azulmedio!important; font-weight: 600;}
 }
 .imgcharco {width: 100%;}
 .contenedorAlbum{background-color: $clarito; margin-bottom: 0!important; padding: 0!important;}
@@ -142,7 +142,7 @@ img.logoPort{width: 20%; height: 20%; padding-top: 5px;}
 .disenio{width: 270px; justify-content: center; padding-left: 15px; padding-top: 7px;}
 .divServicio{justify-content: center;} 
 .tituloDi{margin-top: 20px; text-align: center; color: $amarillo; font-family: 'Impact'; font-size: 30px; font-weight: 800;}
-.introDi{text-align: justify; padding: 20px 5px; color: $azulmedio; font-family: $texto-comun; font-size: 20px;}
+.introDi{text-align: justify; padding: 20px 5px; color: $azulmedio; /*font-family: $texto-comun*/; font-size: 20px;}
 .btn-contactarme{margin-left: 100px; font-size: 20px; color: blue; background-color: yellow;}
 h3{text-align: center;}
 p{text-align: center;}
@@ -163,7 +163,7 @@ div.sectorInfo {margin: 0; width: 100%;}
         }
         &__texto {
                     font-size: 15px;
-                    font-family: $texto-comun;
+                    /*font-family: $texto-comun;*/
                     font-weight: 400;
         }
     }
@@ -181,7 +181,7 @@ div.sectorInfo {margin: 0; width: 100%;}
         }
     }
 .compuHola{width: 70%; margin-left: 40px;}
-.campoForm{margin-left: 15px; text-align: center; font-family: $texto-comun; font-weight: 400; margin: auto; font-size: 130%; color: $naranja; font-weight: 300;}
+.campoForm{margin-left: 15px; text-align: center; /*font-family: $texto-comun*/; font-weight: 400; margin: auto; font-size: 130%; color: $naranja; font-weight: 300;}
 h4{color: $amarillo; font-family: 'Impact'; font-size: $h4; text-align: center; padding-left: 10px; padding-top: 5px;}
 div.formulario{display: flex; justify-content: center; margin-bottom: 20px; padding-bottom: 15px; padding-left: 45px; background-color: $gris; width: 90%; margin: 7px; margin-left: 20px; border-radius: 5px; box-shadow: 2px 5px 12px $azulnegro;}
 form{width: 215px;}
@@ -207,8 +207,8 @@ h2{color: $naranja; font-family: 'Impact';font-size: $h2; font-weight: 800;}
     /*Index Desktop*/
 .textoIndex{flex-flow: row wrap; margin-top: 30px;}
 .tituloIndex{margin-left: 15px; padding-top: 15px; color: $amarillo; font-family: 'Impact'; font-size: 50px; letter-spacing: 8px; text-decoration: underline; text-align: left;}
-.introIndex1{line-height: 1em; margin-left: 15px; padding: 20px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 25px; text-align: left; border-bottom: solid blue 2px}
-.introIndex2{line-height: 1em; margin-left: 20px; padding: 10px 0; color: $azulmedio; font-family: 'Questrial Regular', sans-serif; font-size: 25px; text-align: justify;}
+.introIndex1{line-height: 1em; margin-left: 15px; padding: 20px 0; color: $azulmedio; /*font-family: 'Questrial Regular', sans-serif*/; font-size: 25px; text-align: left; border-bottom: solid blue 2px}
+.introIndex2{line-height: 1em; margin-left: 20px; padding: 10px 0; color: $azulmedio; /*font-family: 'Questrial Regular', sans-serif*/; font-size: 25px; text-align: justify;}
 .logoIndex{width: 40%; padding-top: 10px; padding-left: 30px;}
 div.botonInfo{justify-content: center; margin-left: 15px;}
 .btn-info{font-size: 20px; color: blue; background-color: yellow; padding: 5px 20px}
@@ -221,10 +221,10 @@ div.carouselIndex{flex-flow: row wrap; margin: 20px 0 20px 20px;}
 .submenu {
     background-color: $clarito;
     &__titulo {color: $naranja; font-family: 'Impact'; font-size: 3vw;}
-    &__texto {font-family: $texto-comun; font-weight: 600;}
+    &__texto {/*font-family: $texto-comun*/ font-weight: 600;}
 }
     .charco {
-        font-family: $texto-comun; color: $azulmedio;
+        /*font-family: $texto-comun;*/ color: $azulmedio;
     }
     .charco--georgie {
         @extend .charco;
@@ -241,7 +241,7 @@ div.carouselIndex{flex-flow: row wrap; margin: 20px 0 20px 20px;}
     /*Diseño Desktop*/
 .divServicio{margin-left: 50px;} 
 .tituloDi{margin-top: 30px; color: $amarillo; font-family: 'Impact'; font-size: 40px; font-weight: 800;}
-.introDi{color: $azulmedio; font-family: $texto-comun; font-size: 25px; padding-top: 20px; padding-bottom: 20px;}
+.introDi{color: $azulmedio; /*font-family: $texto-comun;*/ font-size: 25px; padding-top: 20px; padding-bottom: 20px;}
 .btn-contactarme{font-size: 20px; color: blue; background-color: yellow;}
 .bordeBajo{justify-content: center; border-bottom: solid $naranja 2px; padding-bottom: 20px; margin-bottom: 20px;}
 .contenedorGeneral {display: flex; flex-flow: row wrap; padding-left: 50px;}
@@ -276,7 +276,7 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
         }
         &__texto {
                     color: $azulmedio;
-                    font-family: $texto-comun;
+                    /*font-family: $texto-comun;*/
                     font-weight: 400;
         }
     }
@@ -286,7 +286,7 @@ div.sectorInfo {margin-left: 5%; margin-top: 5px;}
    padding-top: 30px; padding-bottom: 10px; width: 480px; margin-left: 40px;
     &__encabezado {
                     letter-spacing: 2px;
-                    font-family: $texto-comun;
+                    /*font-family: $texto-comun;*/
                     font-weight: 300;
                     font-size: 35px;
                     text-align: left;
