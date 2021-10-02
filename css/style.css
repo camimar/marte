@@ -2,12 +2,9 @@
 /*variables para condicionales*/
 /*variables tamaños logos*/
 /*Fuentes descargadas*/
-@font-face {
-  font-family: 'impact';
-  src: url("assets/fonts/impact.ttf"); }
+body {
+  font-family: 'Questrial', sans-serif; }
 
-/*@font-face {font-family: 'Questrial'; src: url('assets/fonts/Questrial-Regular.ttf');}*/
-/*$texto-comun: 'Questrial Regular', sans-serif; */
 /*Código especifico para corregir margenes de Bootstrap*/
 .container-fluid {
   padding-right: 15px;
@@ -27,7 +24,6 @@ h3 {
   font-weight: 600; }
 
 p.textoComun {
-  /*font-family: $texto-comun;*/
   color: #000d1a !important; }
 
 body {
@@ -112,8 +108,7 @@ li > a:hover::after, li > a.active-nav::after {
     color: #ff9900;
     font-weight: 600; }
   .tarjetas__texto {
-    font-weight: 400;
-    /*font-family: $texto-comun*/ }
+    font-weight: 400; }
 
 .fondoTarjetas {
   background-image: linear-gradient(to bottom, #c5c8d0, #247878); }
@@ -141,14 +136,14 @@ div.carouselSobreMi {
     padding: 0; }
   h1 {
     color: #ffd11a;
-    font-family: "impact" !important;
+    font-family: "Impact", arial !important;
     font-size: 300%;
     letter-spacing: 2px;
     padding-left: 3%;
     padding-top: 4%; }
   h2 {
     color: #ff9900;
-    font-family: "impact" !important;
+    font-family: "Impact", arial !important;
     font-size: 50px; }
   .logoNav {
     width: 60px;
@@ -237,7 +232,7 @@ div.carouselSobreMi {
   .tituloIndex {
     padding-top: 15px;
     color: #ffd11a;
-    font-family: 'impact';
+    font-family: "Impact", arial !important;
     font-size: 50px;
     font-weight: 1000;
     letter-spacing: 8px;
@@ -247,7 +242,6 @@ div.carouselSobreMi {
     margin-left: 5px;
     padding: 15px 0;
     color: #1d6262;
-    /*font-family: 'Questrial Regular', sans-serif*/
     font-size: 20px;
     text-align: justify;
     border-bottom: solid blue 2px; }
@@ -255,12 +249,10 @@ div.carouselSobreMi {
     margin-left: 5px;
     padding-bottom: 2px;
     color: #1d6262;
-    /* font-family: 'Questrial Regular', sans-serif*/
     font-size: 20px;
     text-align: justify; }
   .introIndex3 {
     color: blue;
-    /*font-family: 'Questrial Regular', sans-serif*/
     font-size: 18px;
     padding-top: 10px;
     text-align: center; }
@@ -300,11 +292,11 @@ div.carouselSobreMi {
     background-image: linear-gradient(to top, #c5c8d0, #f2f2bd); }
     .submenu__titulo {
       color: #ff9900;
-      font-family: 'impact';
+      font-family: "Impact", arial !important;
       font-weight: 1000;
       font-size: 40px; }
     .submenu__texto {
-      /*font-family: $texto-comun*/
+      font-family: 'Questrial', sans-serif;
       color: #1d6262 !important;
       font-weight: 600; }
   .imgcharco {
@@ -334,14 +326,13 @@ div.carouselSobreMi {
     margin-top: 20px;
     text-align: center;
     color: #ffd11a;
-    font-family: 'impact';
+    font-family: "Impact", arial !important;
     font-size: 30px;
     font-weight: 800; }
   .introDi {
     text-align: justify;
     padding: 20px 5px;
     color: #1d6262;
-    /*font-family: $texto-comun*/
     font-size: 20px; }
   .btn-contactarme {
     margin-left: 100px;
@@ -383,7 +374,6 @@ div.carouselSobreMi {
       border-bottom: 3px solid #c5c8d0; }
     .info__texto {
       font-size: 15px;
-      /*font-family: $texto-comun;*/
       font-weight: 400; }
   /*Contacto Mobile*/
   .hola {
@@ -405,7 +395,6 @@ div.carouselSobreMi {
   .campoForm {
     margin-left: 15px;
     text-align: center;
-    /*font-family: $texto-comun*/
     font-weight: 400;
     margin: auto;
     font-size: 130%;
@@ -413,7 +402,7 @@ div.carouselSobreMi {
     font-weight: 300; }
   h4 {
     color: #ffd11a;
-    font-family: 'impact';
+    font-family: "Impact", arial !important;
     font-size: 2.5vw;
     text-align: center;
     padding-left: 10px;
@@ -443,7 +432,7 @@ div.carouselSobreMi {
   /*General*/
   h2 {
     color: #ff9900;
-    font-family: 'impact';
+    font-family: "Impact", arial !important;
     font-size: 5vw;
     font-weight: 800; }
   /*Footer*/
@@ -485,7 +474,7 @@ div.carouselSobreMi {
     margin-left: 15px;
     padding-top: 15px;
     color: #ffd11a;
-    font-family: 'impact';
+    font-family: "Impact", arial !important;
     font-size: 50px;
     letter-spacing: 8px;
     text-decoration: underline;
@@ -495,7 +484,6 @@ div.carouselSobreMi {
     margin-left: 15px;
     padding: 20px 0;
     color: #1d6262;
-    /*font-family: 'Questrial Regular', sans-serif*/
     font-size: 25px;
     text-align: left;
     border-bottom: solid blue 2px; }
@@ -504,7 +492,6 @@ div.carouselSobreMi {
     margin-left: 20px;
     padding: 10px 0;
     color: #1d6262;
-    /*font-family: 'Questrial Regular', sans-serif*/
     font-size: 25px;
     text-align: justify; }
   .logoIndex {
@@ -535,13 +522,11 @@ div.carouselSobreMi {
     background-color: #f2f2bd; }
     .submenu__titulo {
       color: #ff9900;
-      font-family: 'impact';
+      font-family: "Impact", arial !important;
       font-size: 3vw; }
     .submenu__texto {
-      /*font-family: $texto-comun*/
       font-weight: 600; }
   .charco, .charco--georgie, .charco--willy {
-    /*font-family: $texto-comun;*/
     color: #1d6262; }
   .charco--georgie {
     background-color: #c5c8d0;
@@ -557,12 +542,11 @@ div.carouselSobreMi {
   .tituloDi {
     margin-top: 30px;
     color: #ffd11a;
-    font-family: 'impact';
+    font-family: "Impact", arial !important;
     font-size: 40px;
     font-weight: 800; }
   .introDi {
     color: #1d6262;
-    /*font-family: $texto-comun;*/
     font-size: 25px;
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -680,7 +664,6 @@ div.carouselSobreMi {
       border-bottom: 3px solid #c5c8d0; }
     .info__texto {
       color: #1d6262;
-      /*font-family: $texto-comun;*/
       font-weight: 400; }
   /*Contacto Desktop*/
   .compuHola {
@@ -693,7 +676,6 @@ div.carouselSobreMi {
     margin-left: 40px; }
     .hola__encabezado {
       letter-spacing: 2px;
-      /*font-family: $texto-comun;*/
       font-weight: 300;
       font-size: 35px;
       text-align: left; }
