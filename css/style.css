@@ -2,6 +2,14 @@
 /*variables para condicionales*/
 /*variables tamaños logos*/
 /*Fuentes descargadas*/
+@font-face {
+  font-family: Impact;
+  src: url(assets/fonts/impact.ttf); }
+
+@font-face {
+  font-family: Questrial;
+  src: url(assets/fonts/Questrial-Regular.ttf); }
+
 body {
   font-family: 'Questrial', sans-serif; }
 
